@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #FDD327;
+}
+
+.page-section:nth-child(odd) {
+    background-color: blanchedalmond;
+}
+
+.page-section:nth-child(even) {
+    background-color:crimson;
+}
+
+.page-content {
+    max-width: 900px;
+}
+
+.page-cover {}
+
+.page-footer {
+    background-color:darkcyan;
+}
+
+.page-contact-col-bg {
+    background-color:darkred;
+}
