@@ -17,13 +17,17 @@
                 </b-row>
             </b-col>
             <b-col order="3" class="page-contact-col-bg p-5 mx-3">
-                <b-row align-h="center">
+                <b-row cols="1" align-h="center">
                     <b-col sm="auto">
                         <h4 class="text-center contact-subtitle">Keressen minket!</h4>
                         <p>Kapcsolattartó: Konkolyi Sándor</p>
                         <p>email: &#105;&#110;&#102;&#111;&#064;&#100;&#105;&#111;&#111;&#046;&#104;&#117;</p>
                         <p>tel.: +&#051;&#054;&#032;&#051;&#048;&#032;&#056;&#055;&#057;&#032;&#056;&#055;&#056;&#053;</p>
-                        <!-- <b-icon-facebook href></b-icon-facebook> -->
+                    </b-col>
+                    <b-col class="text-center pt-3">
+                        <b-link  href="https://www.facebook.com/diootanito">
+                            <b-icon class="contact-facebook-icon" icon="facebook"></b-icon>
+                        </b-link>
                     </b-col>
                 </b-row>
             </b-col>
