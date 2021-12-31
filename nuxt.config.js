@@ -1,5 +1,5 @@
 export default {
-  router: { base: '/landing/' },
+  router: { base: '/' },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
