@@ -4,11 +4,6 @@
     --brand-color: #FDD327;
     --dark-accent-color: #B32737;
     --dark-bg-color: #233245;
-    /* --light-bg-color: #F2F5F0;
-    --light-accent-color: #A09F88;
-    --brand-color: #FDD327;
-    --dark-bg-color: #2F4336;
-    --dark-accent-color: #D23D4C; */
   }
 
 .navbar,
@@ -32,8 +27,19 @@
 }
 
 .page-section:nth-child(1) {
-    height: 90vh;
-    /* min-height: ; */
+    height: 95vw;
+}
+
+@media only screen and (orientation: landscape) and (min-width: 700px) {
+    .page-section:nth-child(1) {
+        height: 95vh;
+    }   
+}
+
+@media only screen and (orientation: portrait) {
+    .page-section:nth-child(1) {
+        height: 95vh;
+    }   
 }
 
 @media only screen and (max-width: 320) {
