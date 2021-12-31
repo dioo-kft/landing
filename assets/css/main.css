@@ -136,3 +136,9 @@
 p {
     margin-bottom: 0.5rem;
 }
+
+.intro-text {
+    font-size: 1rem;
+    /* color: #baab6c; */
+    color: #c2ae59;
+}
