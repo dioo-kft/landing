@@ -16,7 +16,7 @@
                     </b-col>
                 </b-row>
             </b-col>
-            <b-col md="5" class="page-contact-col-bg p-5 my-3">
+            <b-col md="5" class="page-contact-col-bg p-5 mx-3 my-3">
                 <b-row cols="1" align-h="center">
                     <b-col sm="auto">
                         <h4 class="text-center contact-subtitle">Keressen minket!</h4>
