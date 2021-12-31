@@ -32,11 +32,122 @@
 }
 
 .page-section:nth-child(1) {
-    background-image: url('~assets/img/cover-bg.png');
-    background-position: right; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    color: var(--dark-bg-color);
+    height: 90vh;
+    /* min-height: ; */
+}
+
+@media only screen and (max-width: 320) {
+    .b-overlay {
+        overflow: hidden;
+    }
+}
+
+.page-cover-stamp {
+    width: 200px;
+    position: relative;
+    left: 40px;
+    bottom: 25vh;
+}
+
+.page-cover-img {
+    min-width: 150px;
+    position: relative;
+    right: 90px;
+}
+
+@media only screen and (min-width: 320) {
+    .page-cover-stamp {
+        width: 200px;
+        position: relative;
+        left: 55px;
+        bottom: 25vh;
+    }
+
+    .page-cover-img {
+        min-width: 150px;
+        position: relative;
+        right: 75px;
+    }
+}
+
+@media only screen and (min-width: 350px) {
+    .page-cover-stamp {
+        width: 200px;
+        position: relative;
+        left: 75px;
+        bottom: 25vh;
+    }
+
+    .page-cover-img {
+        min-width: 150px;
+        position: relative;
+        right: 50px;
+    }
+}
+
+@media only screen and (min-width: 390px) {
+    .page-cover-stamp {
+        width: 200px;
+        position: relative;
+        left: 100px;
+        bottom: 25vh;
+    }
+}
+
+@media only screen and (min-width: 574px) {
+    .page-cover-stamp {
+        width: 250px;
+        position: relative;
+        left: 150px;
+        bottom: 25vh;
+    }
+
+    .page-cover-img {
+        min-width: 150px;
+        position: relative;
+        right: 40px;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .page-cover-stamp {
+        width: 250px;
+        position: relative;
+        right: -30vw;
+        bottom: 25vh;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .page-cover-img {
+        position: relative;
+        left: 2rem;
+        width: 300px;
+    }
+
+    .page-cover-stamp {
+        width: 250px;
+        position: relative;
+        left: -100px;
+        top: 30vh;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .page-cover-stamp {
+        width: 275px;
+        position: relative;
+        left: 350px;
+        top: 25vh;
+    }
+}
+
+.page-cover {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .page-section:nth-child(odd) {
@@ -61,7 +172,6 @@
 
 .page-cover-title {
     font-size: 160px;
-    /* font-size: 10rem; */
     font-weight: 500;
     color: var(--brand-color);
     margin-left: -0.8rem;
@@ -74,8 +184,8 @@
     margin-bottom: 3rem;
 }
 
-.page-cover-img {
-    margin-top: 3.25rem;
+.cover-page-text {
+    margin-top: -70px;
 }
 
 .page-contact-col-bg {
@@ -112,7 +222,8 @@
 }
 
 .button-brand-color {
-    color: var(--light-bg-color);
+    color: #fff;
+    /* color: var(--light-bg-color); */
     background-color: var(--brand-color);
     border-color: #dab624;
 }
@@ -148,6 +259,7 @@ p {
 .intro-text {
     font-size: 1.15rem;
     color: #7d7d6c;
+    font-weight: 500;
     /* color: #c2ae59; */
 }
 .contact-facebook-icon {

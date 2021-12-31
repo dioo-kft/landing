@@ -5,8 +5,8 @@
                 <p>Kapcsolat</p>
             </b-col>
         </b-row>
-        <b-row class="my-3">
-            <b-col order="1" class="page-contact-col-bg mx-3 p-5 text-center">
+        <b-row class="my-3" align-h="center">
+            <b-col md="5" class="page-contact-col-bg mx-3 my-3 p-5 text-center">
                 <b-row cols="1" align-content="around" class="h-100">
                     <b-col>
                         <b-button pill class="button-brand-color" href="mailto:&#105;&#110;&#102;&#111;&#064;&#100;&#105;&#111;&#111;&#046;&#104;&#117;?subject=DIOO%20|%20Érdeklődés">Üzenjen nekünk</b-button>
@@ -16,7 +16,7 @@
                     </b-col>
                 </b-row>
             </b-col>
-            <b-col order="3" class="page-contact-col-bg p-5 mx-3">
+            <b-col md="5" class="page-contact-col-bg p-5 my-3">
                 <b-row cols="1" align-h="center">
                     <b-col sm="auto">
                         <h4 class="text-center contact-subtitle">Keressen minket!</h4>
@@ -31,9 +31,6 @@
                     </b-col>
                 </b-row>
             </b-col>
-            <!-- <b-col order="2" cols="1" sm="auto" class="page-contact-or"  align-self="center">
-                VAGY
-            </b-col> -->
         </b-row>
     </div>
 </template>

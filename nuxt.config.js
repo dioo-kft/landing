@@ -8,7 +8,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'dioo-landing-page',
+    title: 'DIOO',
     htmlAttrs: {
       lang: 'en'
     },
