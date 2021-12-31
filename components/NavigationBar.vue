@@ -1,6 +1,8 @@
 <template>
   <b-navbar sticky toggleable="lg">
-    <b-navbar-brand href="#top">DIOO</b-navbar-brand>
+    <b-navbar-brand href="#top">
+      <img src="~/assets/img/DIOO_name-navbar.png" />
+    </b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
