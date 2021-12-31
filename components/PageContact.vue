@@ -9,11 +9,11 @@
             <b-col md="5" class="page-contact-col-bg mx-3 my-3 p-5 text-center">
                 <b-row cols="1" align-content="around" class="h-100">
                     <b-col>
-                        <b-button pill class="button-brand-color" href="mailto:info&#064;dioo.hu?subject=DIOO%20|%20Érdeklődés">Üzenjen nekünk</b-button>
+                        <b-button pill class="button-brand-color" href="mailto:info@dioo.hu?subject=DIOO%20|%20Érdeklődés">Üzenjen nekünk</b-button>
                         <!-- <b-button pill class="button-brand-color" href="mailto:&#105;&#110;&#102;&#111;&#064;&#100;&#105;&#111;&#111;&#046;&#104;&#117;?subject=DIOO%20|%20Érdeklődés">Üzenjen nekünk</b-button> -->
                     </b-col>
                     <b-col>
-                        <b-button pill class="button-light-inverted" href="mailto:&#105;&#110;&#102;&#111;&#064;&#100;&#105;&#111;&#111;&#046;&#104;&#117;?subject=DIOO%20|%20Bemutatót%20kérek">Bemutatót kérek</b-button>
+                        <b-button pill class="button-light-inverted" href="mailto:info@dioo.hu?subject=DIOO%20|%20Bemutatót%20kérek">Bemutatót kérek</b-button>
                     </b-col>
                 </b-row>
             </b-col>
