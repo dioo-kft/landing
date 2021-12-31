@@ -7,7 +7,7 @@
         </b-row>
         <b-row>
             <b-col class="text-center p-3 text-muted">
-                <p>A DIOO elnevezésű készségfejlesztő játékeszköz egy új, innovatív, teljes egészében magyar digitális fejlesztés. A Digitális Okosjáték Óvodásoknak  (DIOO) billentyűzet és egér nélkül, érintőképernyőn irányítható program, amelyben a feladatokat hangutasítások alapján kapják a gyerekek. Az Okosjáték lehetővé teszi az óvodások iskolaérettségi szintjének mérését és a szükséges képességek erősítését.</p>
+                <p>A DIOO egy készségfejlesztő játékeszköz: egy új, innovatív, teljes egészében magyar digitális fejlesztés. A Digitális Okosjáték Óvodásoknak  (DIOO) billentyűzet és egér nélkül, érintőképernyőn irányítható program, amelyben a feladatokat hangutasítások alapján kapják a gyerekek. Az Okosjáték lehetővé teszi az óvodások iskolaérettségi szintjének mérését és a szükséges képességek erősítését.</p>
             </b-col>
         </b-row>
         <b-row>
