@@ -6,7 +6,15 @@
         <b-col md="8" class="cover-page-text">
             <b-row align-h="center" class="page-cover-title">
                 <b-col cols="auto">
+        <b-overlay show="true" opacity="0">
                     <b-img src="~assets/img/DIOO_name.png" fluid alt="DIOO"></b-img>
+                    
+          <template #overlay>
+            <div class="page-cover-stamp">
+              <b-img src="~assets/img/innovacios-nagydij_stamp.png" fluid alt="Responsive image"></b-img>
+            </div>
+          </template>
+        </b-overlay>
                 </b-col>
             </b-row>
             <b-row align-h="center" class="page-cover-subtitle">

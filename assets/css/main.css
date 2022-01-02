@@ -27,20 +27,16 @@
 }
 
 .page-section:nth-child(1) {
-    height: 95vw;
+    min-height: 95vh;
 }
 
-@media only screen and (orientation: landscape) and (min-width: 700px) {
+@media only screen and (orientation: landscape) {   
     .page-section:nth-child(1) {
+        min-height: 740px;
         height: 95vh;
-    }   
+    }
 }
 
-@media only screen and (orientation: portrait) {
-    .page-section:nth-child(1) {
-        height: 95vh;
-    }   
-}
 
 @media only screen and (max-width: 320) {
     .b-overlay {
@@ -49,7 +45,7 @@
 }
 
 .page-cover-stamp {
-    width: 200px;
+    width: 180px;
     position: relative;
     left: 40px;
     bottom: 25vh;
@@ -80,23 +76,14 @@
     .page-cover-stamp {
         width: 200px;
         position: relative;
-        left: 75px;
+        left: 65px;
         bottom: 25vh;
     }
 
     .page-cover-img {
-        min-width: 150px;
+        min-width: 185px;
         position: relative;
-        right: 50px;
-    }
-}
-
-@media only screen and (min-width: 390px) {
-    .page-cover-stamp {
-        width: 200px;
-        position: relative;
-        left: 100px;
-        bottom: 25vh;
+        right: 75px;
     }
 }
 
@@ -135,7 +122,16 @@
         width: 250px;
         position: relative;
         left: -100px;
-        top: 30vh;
+        top: -150px;
+    }
+}
+
+@media only screen and (min-width: 872px) {
+    .page-cover-stamp {
+        width: 275px;
+        position: relative;
+        left: 230px;
+        top: 280px;
     }
 }
 
@@ -143,8 +139,8 @@
     .page-cover-stamp {
         width: 275px;
         position: relative;
-        left: 350px;
-        top: 25vh;
+        left: 300px;
+        top: 250px;
     }
 }
 
@@ -208,7 +204,6 @@
     font-weight: 400;
 }
 
-/* .btn-secondary:not(:disabled):not(.disabled):active { */
 .btn-secondary:active,
 .btn-secondary:hover {
     color: var(--light-bg-color);
@@ -221,15 +216,12 @@
     color: var(--light-bg-color);
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /* margin-left: -36px;
-    margin-right: -36px; */
     margin: -36px;
     padding: 16px 80px;
 }
 
 .button-brand-color {
     color: #fff;
-    /* color: var(--light-bg-color); */
     background-color: var(--brand-color);
     border-color: #dab624;
 }
@@ -266,7 +258,6 @@ p {
     font-size: 1.15rem;
     color: #7d7d6c;
     font-weight: 500;
-    /* color: #c2ae59; */
 }
 .contact-facebook-icon {
     font-size: 1.5rem;
