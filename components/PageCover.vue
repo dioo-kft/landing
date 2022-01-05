@@ -6,7 +6,8 @@
         <b-col md="8" class="cover-page-text">
             <b-row align-h="center" class="page-cover-title">
                 <b-col cols="auto">
-                    <b-img src="~assets/img/DIOO_name.png" fluid alt="DIOO"></b-img>
+                    <!-- <b-img src="~assets/img/DIOO_name.png" fluid alt="DIOO"></b-img> -->
+                    DIOO
                 </b-col>
             </b-row>
             <b-row align-h="center" class="page-cover-subtitle">

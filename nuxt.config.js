@@ -1,5 +1,5 @@
 export default {
-  router: { base: '/' },
+  router: { base: '/landing' },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -26,6 +26,7 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/css/main.css',
+    '~/assets/fonts/Kaushan-script.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
