@@ -268,3 +268,44 @@ p {
 .contact-facebook-icon:hover {
     color: #c2ae59;
 }
+
+.faq-question {
+    color: var(--light-bg-color);
+    background-color: var(--dark-bg-color);
+    border-color: var(--dark-bg-color);
+}
+
+.faq-question:hover,
+.btn-info:not(:disabled):not(.disabled):active,
+.btn-info:not(:disabled):not(.disabled):active:focus {
+    color: var(--light-bg-color);
+    background-color: var(--light-accent-color);
+    border-color: var(--light-accent-color);
+    box-shadow: var(--light-accent-color);
+}
+
+.faq-question:focus,
+.faq-question:active {
+    color: var(--light-bg-color);
+    background-color: var(--light-accent-color);
+    border-color: var(--light-accent-color);
+    box-shadow: var(--light-accent-color);
+}
+
+.faq-question.not-collapsed {
+    background-color: var(--brand-color);
+    border-color: var(--brand-color);
+    color: var(--dark-bg-color);
+}
+
+.faq-answer {
+    color: var(--dark-bg-color);
+}
+
+/* .carousel {
+    max-height: 300px;
+}
+
+.carousel-item {
+    max-height: 300px;
+} */
