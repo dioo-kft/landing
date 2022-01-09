@@ -20,11 +20,11 @@
             </b-card>
         </b-col>
     </page-section>
-    <!-- <page-section id="testimonial" title="Rólunk mondták" align-self="stretch">
+    <page-section id="testimonial" title="Rólunk mondták" align-self="stretch">
         <b-col>
             <testimonial-carousel />
         </b-col>
-    </page-section> -->
+    </page-section>
     <page-section id="contact" title="Kapcsolat">
       <page-contact />
     </page-section>

@@ -1,9 +1,10 @@
 :root {
     --light-bg-color: #F4F6F5;
-    --light-accent-color: #9DAABB;
+    --light-accent-color:hsla(214, 18%, 67%, 1);
     --brand-color: #FDD327;
     --dark-accent-color: #B32737;
     --dark-bg-color: #233245;
+    scroll-behavior: smooth;
   }
 
 .navbar,
@@ -24,6 +25,10 @@
 
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--light-bg-color);
+}
+
+.nav-link {
+    transition: transform 0.6s ease-in-out;
 }
 
 .page-section:nth-child(1) {
@@ -302,10 +307,16 @@ p {
     color: var(--dark-bg-color);
 }
 
-/* .carousel {
-    max-height: 300px;
+.carousel-caption {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: var(--dark-bg-color);
+    background-color: var(--light-accent-color);
+    border-radius: 10px;
+    padding: 1.5rem;
 }
 
-.carousel-item {
-    max-height: 300px;
-} */
+.quote-author {
+    font-style: italic;
+}
