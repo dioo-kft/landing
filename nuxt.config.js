@@ -32,7 +32,6 @@ export default {
   css: [
     '~/assets/css/main.css',
     '~/assets/css/cookies.css',
-    '~/assets/css/iframe-manager.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
