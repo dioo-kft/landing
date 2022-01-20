@@ -402,6 +402,7 @@ p {
     .carousel-caption {
         top: 20%;
         height: 300px;
+        overflow: hidden;
     }
 }
 
