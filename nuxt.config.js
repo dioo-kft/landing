@@ -1,3 +1,5 @@
+const webpack = require('webpack')
+
 export default {
   router: { base: '/' },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -57,6 +59,5 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  build: {}
 }

@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <b-col>
     <b-carousel
       id="carousel"
       v-model="slide"
-      :interval="4000"
+      interval="1000000"
       controls
       indicators
       img-width="1024"
@@ -14,7 +14,7 @@
         <p class="quote-author"> — {{ reviews[id-1].author }} </p>
       </b-carousel-slide>
     </b-carousel>
-  </div>
+  </b-col>
 </template>
 
 <script>
@@ -39,6 +39,6 @@
            },
          ],
       }
-    }
+    },
   }
 </script>
