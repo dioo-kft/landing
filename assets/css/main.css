@@ -456,14 +456,16 @@ p {
         transform: translateY(0%);
         overflow: hidden;
     }
-
-    .b-overlay {
-        overflow: hidden;
-    }
 }
 
 .b-overlay {
     overflow: scroll;
+}
+
+@media only screen and (min-width: 380px) {
+    .b-overlay {
+        overflow: hidden;
+    }
 }
 
 .b-overlay .bg-light {
