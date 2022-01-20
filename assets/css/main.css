@@ -414,11 +414,11 @@ p {
     .carousel-caption {
         top: 18%;
         height: 250px;
+        overflow: hidden;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    /* .carousel-slide, */
     .carousel-inner {
         height: 280px;
     }
@@ -426,6 +426,7 @@ p {
     .carousel-caption {
         top: 8%;
         height: 200px;
+        overflow: hidden;
     }
 }
 
