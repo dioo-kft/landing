@@ -456,6 +456,10 @@ p {
         transform: translateY(0%);
         overflow: hidden;
     }
+
+    .b-overlay {
+        overflow: hidden;
+    }
 }
 
 .b-overlay {
