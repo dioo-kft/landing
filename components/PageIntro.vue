@@ -3,13 +3,13 @@
     <b-row>
       <b-col class="text-md-center pb-3 intro-text">
         <p>
-          A DIOO egy készségfejlesztő játékeszköz: egy új, innovatív, teljes
-          egészében magyar digitális fejlesztés. A Digitális Okosjáték
-          Óvodásoknak (DIOO) billentyűzet és egér nélkül, érintőképernyőn
-          irányítható program, amelyben a feladatokat hangutasítások alapján
-          kapják a gyerekek. Az Okosjáték lehetővé teszi az óvodások
-          iskolaérettségi szintjének mérését és a szükséges képességek
-          erősítését.
+          A DIOO a sikeres iskolakezdéshez szükséges készségeket játékosan
+          fejlesztő eszköz; egy új, innovatív, teljes egészében magyar digitális
+          fejlesztés.<br />A Digitális Okosjáték Óvodásoknak (DIOO) billentyűzet
+          és egér nélkül, érintőképernyőn irányítható program, amelyben a
+          feladatokat hangutasítások alapján kapják a gyerekek. Az Okosjáték
+          lehetővé teszi az óvodások iskolaérettségi szintjének mérését és a
+          szükséges képességek erősítését.
         </p>
       </b-col>
     </b-row>
@@ -19,7 +19,7 @@
           :show="!isYoutubeEnabled"
           opacity="1"
           variant="light"
-          style="color: black;"
+          style="color: black"
         >
           <b-embed
             v-if="isYoutubeEnabled"
@@ -42,11 +42,17 @@
                 animation="cylon"
                 class="d-none d-sm-inline-block"
               ></b-icon>
-                <p id="cancel-label">A videó megtekintéséhez kérem engedélyezze a YouTube által használt sütiket! ↓</p>
-                <p style="font-size: 12px;">Vagy a videót a YouTube oldalán is elérheti a 
-                  <a href="https://www.youtube.com/watch?v=7XFOUAdqHmU">https://www.youtube.com/watch?v=7XFOUAdqHmU</a>
-                  linken.
-                </p>
+              <p id="cancel-label">
+                A videó megtekintéséhez kérem engedélyezze a YouTube által
+                használt sütiket! ↓
+              </p>
+              <p style="font-size: 12px">
+                Vagy a videót a YouTube oldalán is elérheti a
+                <a href="https://www.youtube.com/watch?v=7XFOUAdqHmU"
+                  >https://www.youtube.com/watch?v=7XFOUAdqHmU</a
+                >
+                linken.
+              </p>
               <b-button
                 ref="cancel"
                 variant="outline-success"
@@ -80,9 +86,11 @@ export default {
     },
   },
   methods: {
-      enableYoutubeCookies() {
-        this.$store.state.cookieConsent.accept(this.$store.state.cookies.youtube.toggle.value); 
-      },
+    enableYoutubeCookies() {
+      this.$store.state.cookieConsent.accept(
+        this.$store.state.cookies.youtube.toggle.value
+      );
+    },
   },
 };
 </script>

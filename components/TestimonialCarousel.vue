@@ -35,7 +35,7 @@
            {
              title: "Játékuniverzum",
              quote: "Az érintőképernyős eszköz egy digitális játékuniverzumot rejt magába, s úgy tanítja a gyerekeket, hogy mindezt játéknak élik meg.",
-             author: "Balatonföldvár, intézményvezető",
+             author: "kelet-magyarországi óvoda vezetője",
            },
          ],
       }
