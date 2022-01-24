@@ -56,7 +56,7 @@ export default {
         {
           question: "Szükséges-e informatikai tudás a DIOO használatához?",
           answer:
-            "Hasznlata semmilyen számítástechnikai tudás nem igényel. A DIOO érintőképernyős eszköz, egér és billentyűzet nélkül használható. Az eszköz bekapcsolása után magától elindul és készen áll a használatra.",
+            "Használata semmilyen számítástechnikai tudás nem igényel. A DIOO érintőképernyős eszköz, egér és billentyűzet nélkül használható. Az eszköz bekapcsolása után magától elindul és készen áll a használatra.",
         },
         {
           question: "Ki segít a DIOO megismerésében?",
