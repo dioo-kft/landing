@@ -7,7 +7,10 @@
       <b-col cols="auto">
         <b-row>
           <b-col cols="auto">
-            <a href="/cookie-tajekoztato">Cookie tájékoztató</a>
+            <a href="https://system.dioo.hu/ovonok#login_form">Pedagógusi Felület</a>
+          </b-col>
+          <b-col cols="auto">
+            <a href="/cookie-tajekoztato">Cookie Tájékoztató</a>
           </b-col>
           <b-col cols="auto">
             <a href="/adatvedelmi-szabalyzat">GDPR Adatvédelmi Szabályzat</a>

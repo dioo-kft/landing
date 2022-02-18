@@ -16,6 +16,7 @@
 
 .page-footer a {
     color: var(--dark-bg-color);
+    text-decoration: underline;
 }
 
 .navbar-brand {
