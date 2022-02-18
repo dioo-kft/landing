@@ -10,10 +10,10 @@
             <a href="https://system.dioo.hu/ovonok#login_form">Pedagógusi Felület</a>
           </b-col>
           <b-col cols="auto">
-            <a href="/cookie-tajekoztato">Cookie Tájékoztató</a>
+            <nuxt-link to="/cookie-tajekoztato">Cookie Tájékoztató</nuxt-link>
           </b-col>
           <b-col cols="auto">
-            <a href="/adatvedelmi-szabalyzat">GDPR Adatvédelmi Szabályzat</a>
+            <nuxt-link to="/adatvedelmi-szabalyzat">GDPR Adatvédelmi Szabályzat</nuxt-link>
           </b-col>
         </b-row>
       </b-col>
