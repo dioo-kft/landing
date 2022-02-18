@@ -1,12 +1,19 @@
 <template>
-    <b-container fluid class="page-footer my-0 py-3">
+  <b-container fluid class="page-footer my-0 py-3">
+    <b-row align-h="between">
+      <b-col cols="auto">
+        <p>Copyright © 2021 DIOO Digitális Oktató | Minden jog fenntartva.</p>
+      </b-col>
+      <b-col cols="auto">
         <b-row>
-            <b-col cols="12" md="8" right>
-                <p>Copyright © 2021 DIOO Digitális Oktató | Minden jog fenntartva.</p>
-            </b-col>
-            <b-col class="text-md-right">
-                <a href="/cookie-tajekoztato">Cookie tájékoztató</a>
-            </b-col>
+          <b-col cols="auto">
+            <a href="/cookie-tajekoztato">Cookie tájékoztató</a>
+          </b-col>
+          <b-col cols="auto">
+            <a href="/adatvedelmi-szabalyzat">GDPR Adatvédelmi Szabályzat</a>
+          </b-col>
         </b-row>
-    </b-container>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
