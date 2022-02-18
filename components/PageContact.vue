@@ -25,7 +25,7 @@
           <b-col cols="auto">
             <h5>Társadalmi Felelősségvállalás, Vállalatoknak</h5>
             <p>Kapcsolattartó: Konkolyi Szilvia</p>
-            <p style="margin-bottom: 0; padding-bottom: 0">tel.: &plus;&#51;&#54;&#51;&#48;&#49;&#57;&#54;&#54;&#56;&#50;&#50;</p>
+            <p style="margin-bottom: 0; padding-bottom: 0">tel.: &plus;&#51;&#54;&#032;&#51;&#48;&#032;&#49;&#57;&#54;&#032;&#54;&#56;&#50;&#50;</p>
             <p style="font-size: 12px">Hétköznaponként 8:00 - 17:00 között hívható.</p>
           </b-col>
         </b-row>

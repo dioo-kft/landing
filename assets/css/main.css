@@ -317,7 +317,7 @@ a.nuxt-link-active{
 }
 
 .button-light-inverted {
-    color: var(--light-accent-color);
+    color: rgb(105, 114, 126);
     background-color: var(--light-bg-color);
     margin-top: 2rem;
 }

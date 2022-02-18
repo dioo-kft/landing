@@ -2,7 +2,7 @@
   <b-container fluid class="page-footer my-0 py-3">
     <b-row align-h="between">
       <b-col cols="auto">
-        <p>Copyright © 2021 DIOO Digitális Oktató | Minden jog fenntartva.</p>
+        <p>Copyright © 2022 DIOO Digitális Oktató | Minden jog fenntartva.</p>
       </b-col>
       <b-col cols="auto">
         <b-row>
