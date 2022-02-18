@@ -1,80 +1,71 @@
 <template>
   <div class="page-contact">
-    <b-row align-h="center">
-      <b-col
-        md="5"
-        class="page-contact-col-bg mx-3 p-5 text-center my-3 my-md-0"
-      >
-        <b-row align-content="between" align-v="center" class="h-100 justify-content-center" >
-          <b-col cols="auto">
-            <b-button
-              pill
-              class="button-light-inverted"
-              href="https://forms.clickup.com/f/4bd9e-3121/C0VWX3U1BMFPYUQKSF"
-              >Bemutatót kérek</b-button
-            >
-          </b-col>
-          <b-col cols="auto"
-            ><b-button
-              pill
-              class="button-light-inverted"
-              href="https://forms.clickup.com/f/4bd9e-3001/ZXRM9YPGZ98O8YC29Y"
-              >DIOO-t veszek</b-button
-            ></b-col
-          >
-          <b-col cols="auto"
-            ><b-button
-              pill
-              class="button-light-inverted"
-              href="https://forms.clickup.com/f/4bd9e-3081/UU6XGDB170WL17YDZK"
-              >Szülői érdeklődés</b-button
-            ></b-col
-          >
-          <b-col cols="auto"
-            ><b-button
-              pill
-              class="button-light-inverted"
-              href="https://forms.clickup.com/f/4bd9e-3041/NO44ISE6HP07EN8GGX"
-              >Támogatok egy óvodát</b-button
-            ></b-col
-          >
+    <b-row class="mb-3" align-h="around">
+      <b-col cols="7" class="page-contact-col-bg p-5">
+        <b-row align-h="between">
+            <b-col cols="auto" style="font-size: 1.5rem">Keressen minket!</b-col>
+            <b-col cols="auto">
+                <b-link href="https://www.facebook.com/diootanito">
+                    <b-icon class="contact-facebook-icon" icon="facebook"></b-icon>
+                </b-link>
+            </b-col>
         </b-row>
-      </b-col>
-      <b-col md="5" class="page-contact-col-bg p-5 mx-3 my-3 my-md-0">
-        <b-row cols="1" align-h="center">
-          <b-col sm="auto">
-            <h4 class="text-center contact-subtitle">Keressen minket!</h4>
-            <p>
-              email címünk:
-              <a href="mailto:info@dioo.hu"
-                >&#105;&#110;&#102;&#111;&#064;&#100;&#105;&#111;&#111;&#046;&#104;&#117;</a
-              >
-            </p>
+        <b-row class="mb-3">
+            <b-col cols="auto" class="contact-email">
+                email címünk: <a href="mailto:info@dioo.hu">&#105;&#110;&#102;&#111;&#064;&#100;&#105;&#111;&#111;&#046;&#104;&#117;</a>
+            </b-col>
+        </b-row>
+        <b-row align-h="between">
+          <b-col cols="auto">
             <h5>Fenntartóknak, Pedagógusoknak</h5>
             <p>Kapcsolattartó: Konkolyi Sándor</p>
-            <p style="margin-bottom: 0; padding-bottom: 0">
-              tel.:
-              +&#051;&#054;&#032;&#051;&#048;&#032;&#056;&#055;&#057;&#032;&#056;&#055;&#056;&#053;
-            </p>
-            <p style="font-size: 12px">
-              Hétköznaponként 8:00 - 17:00 között hívható.
-            </p>
+            <p style="margin-bottom: 0; padding-bottom: 0">tel.: +&#051;&#054;&#032;&#051;&#048;&#032;&#056;&#055;&#057;&#032;&#056;&#055;&#056;&#053;</p>
+            <p style="font-size: 12px">Hétköznaponként 8:00 - 17:00 között hívható.</p>
           </b-col>
-          <b-col sm="auto">
+          <b-col cols="auto">
             <h5>Társadalmi Felelősségvállalás, Vállalatoknak</h5>
             <p>Kapcsolattartó: Konkolyi Szilvia</p>
-            <p style="margin-bottom: 0; padding-bottom: 0">
-              tel.:
-              &plus;&#51;&#54;&#51;&#48;&#49;&#57;&#54;&#54;&#56;&#50;&#50;
-            </p>
-            <p style="font-size: 12px">
-              Hétköznaponként 8:00 - 17:00 között hívható.
-            </p>
+            <p style="margin-bottom: 0; padding-bottom: 0">tel.: &plus;&#51;&#54;&#51;&#48;&#49;&#57;&#54;&#54;&#56;&#50;&#50;</p>
+            <p style="font-size: 12px">Hétköznaponként 8:00 - 17:00 között hívható.</p>
           </b-col>
-          <b-col class="text-center pt-3">
-            <b-link href="https://www.facebook.com/diootanito">
-              <b-icon class="contact-facebook-icon" icon="facebook"></b-icon>
-            </b-link>
+        </b-row>
+        <b-row align-h="center">
+            <b-col cols="auto" class="mt-4">
+              <b-button pill class="button-light-inverted" href="https://forms.clickup.com/f/4bd9e-2981/GXK29I7X40UVA9P2H3">
+                Visszahívást kérek!
+              </b-button>
+            </b-col>
+        </b-row>
+      </b-col>
+      <b-col cols="4" align-self="stretch">
+        <b-row align-h="center" align-content="between" class="h-100">
+          <b-col class="page-contact-col-bg px-3 py-5" style="height: 47%;">
+            <b-row align-content="between" class="h-100">
+              <b-col>
+                <b-button pill class="button-light-inverted w-100" href="https://forms.clickup.com/f/4bd9e-3121/C0VWX3U1BMFPYUQKSF">
+                  Bemutatót kérek
+                </b-button>
+              </b-col>
+              <b-col>
+                <b-button pill class="button-light-inverted w-100" href="https://forms.clickup.com/f/4bd9e-3001/ZXRM9YPGZ98O8YC29Y">
+                  DIOO-t veszek
+                </b-button>
+              </b-col>
+            </b-row>
+          </b-col>
+          <b-col class="page-contact-col-bg px-3 py-5" style="height: 47%;">
+            <b-row align-content="between" class="h-100">
+              <b-col>
+                <b-button pill class="button-light-inverted w-100" href="https://forms.clickup.com/f/4bd9e-3081/UU6XGDB170WL17YDZK">
+                  Szülői érdeklődés
+                </b-button>
+              </b-col>
+              <b-col>
+                <b-button pill class="button-light-inverted w-100" href="https://forms.clickup.com/f/4bd9e-3041/NO44ISE6HP07EN8GGX">
+                  Támogatok egy óvodát
+                </b-button>
+              </b-col>
+            </b-row>
           </b-col>
         </b-row>
       </b-col>

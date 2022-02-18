@@ -225,7 +225,7 @@
     padding-top: 1rem;
 }
 
-.page-contact p a {
+.contact-email a {
     color: var(--brand-color);
 }
 
