@@ -215,6 +215,20 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.page-contact p {
+    line-height: 1.25;
+}
+
+.page-contact h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-top: 1rem;
+}
+
+.page-contact p a {
+    color: var(--brand-color);
+}
+
 .btn {
     text-transform: uppercase;
     box-shadow: 0 2px 2px 0 rgb(153 153 153 / 14%), 0 3px 1px -2px rgb(153 153 153 / 20%), 0 1px 5px 0 rgb(153 153 153 / 12%);

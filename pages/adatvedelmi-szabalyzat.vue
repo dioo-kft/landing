@@ -3,7 +3,8 @@
     <page-section section-id="cookies" title="GDPR Adatvédelmi Szabályzat">
       <b-col>
         <p>
-          TODO
+          Probléma az oldal betöltése közben.
+          Próbálja meg a frissítés gombbal az oldalt újra betölteni!
         </p>
       </b-col>
     </page-section>

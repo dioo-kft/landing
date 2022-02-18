@@ -15,9 +15,16 @@
                 <b-row cols="1" align-h="center">
                     <b-col sm="auto">
                         <h4 class="text-center contact-subtitle">Keressen minket!</h4>
+                        <p>email címünk: <a href="mailto:info@dioo.hu">&#105;&#110;&#102;&#111;&#064;&#100;&#105;&#111;&#111;&#046;&#104;&#117;</a></p>
+                        <h5>Fenntartóknak, Pedagógusoknak</h5>
                         <p>Kapcsolattartó: Konkolyi Sándor</p>
-                        <p>email: &#105;&#110;&#102;&#111;&#064;&#100;&#105;&#111;&#111;&#046;&#104;&#117;</p>
                         <p style="margin-bottom: 0; padding-bottom:0;">tel.: +&#051;&#054;&#032;&#051;&#048;&#032;&#056;&#055;&#057;&#032;&#056;&#055;&#056;&#053;</p>
+                        <p style="font-size: 12px;">Hétköznaponként 8:00 - 17:00 között hívható.</p>
+                    </b-col>
+                    <b-col sm="auto">
+                        <h5>Társadalmi Felelősségvállalás, Vállalatoknak</h5>
+                        <p>Kapcsolattartó: Konkolyi Szilvia</p>
+                        <p style="margin-bottom: 0; padding-bottom:0;">tel.: &plus;&#51;&#54;&#51;&#48;&#49;&#57;&#54;&#54;&#56;&#50;&#50;</p>
                         <p style="font-size: 12px;">Hétköznaponként 8:00 - 17:00 között hívható.</p>
                     </b-col>
                     <b-col class="text-center pt-3">
