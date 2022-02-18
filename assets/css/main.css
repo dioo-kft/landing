@@ -17,7 +17,7 @@
 .page-footer a {
     color: var(--dark-bg-color);
     text-decoration: underline;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .page-footer a:hover {
