@@ -105,7 +105,7 @@ a.nuxt-link-active{
 }
 
 #cover {
-    background-image: linear-gradient(to left bottom, #233245, #4c4d63, #766b80, #a08a9c, #caacb7, #deb7bc, #f0c3bf, #ffd0c0, #ffcaa3, #ffc980, #ffcc59, #fdd327);
+    background-image: linear-gradient(to left bottom, #233245, #4c4d63 18%, #766b80 28%, #a08a9c 35%, #caacb7 42%, #deb7bc 49%, #f0c3bf 56%, #ffd0c0 63%, #ffcaa3 70%, #ffc980 77%, #ffcc59 84%, #fdd327 92%);
 }
 
 #cover-card {
