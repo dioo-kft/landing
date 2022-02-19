@@ -2,8 +2,7 @@
   <b-container fluid>
     <page-section section-id="cover">
       <div class="bg-shape">
-        <page-cover />
-      </div>
+      <page-cover /></div>
     </page-section>
     <page-section section-id="intro" title="Mi a DIOO?">
       <page-intro />
