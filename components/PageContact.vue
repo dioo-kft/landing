@@ -39,8 +39,12 @@
       </b-col>
       <b-col cols="4" align-self="stretch">
         <b-row align-h="center" align-content="between" class="h-100">
-          <b-col class="page-contact-col-bg px-3 py-5" style="height: 47%;">
+          <b-col class="page-contact-col-bg px-3 py-5 h-100">
             <b-row align-content="between" class="h-100">
+              <b-col>
+                <p style="text-align: center;">A TV műsor miatt vonalaink gyakran foglaltak.
+Jelentkezése számunkra fontos, ezért kérjük, érdeklődését jelezze az alábbi gombok valamelyikével!</p>
+              </b-col>
               <b-col>
                 <b-button pill class="button-light-inverted w-100" href="https://forms.clickup.com/f/4bd9e-3121/C0VWX3U1BMFPYUQKSF">
                   Bemutatót kérek
@@ -51,10 +55,10 @@
                   DIOO-t veszek
                 </b-button>
               </b-col>
-            </b-row>
+            <!-- </b-row>
           </b-col>
-          <b-col class="page-contact-col-bg px-3 py-5" style="height: 47%;">
-            <b-row align-content="between" class="h-100">
+          <b-col class="page-contact-col-bg px-3 py-5" style="height: 40%;"> -->
+            <!-- <b-row align-content="between" class="h-100"> -->
               <b-col>
                 <b-button pill class="button-light-inverted w-100" href="https://forms.clickup.com/f/4bd9e-3081/UU6XGDB170WL17YDZK">
                   Szülői érdeklődés
