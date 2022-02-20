@@ -1,6 +1,6 @@
 <template>
   <b-container fluid>
-    <page-section section-id="cookies" title="GDPR Adatvédelmi Szabályzat">
+    <page-section section-id="privacy-policy" title="GDPR Adatvédelmi Szabályzat">
       <b-col>
         <p>A DIOO Digitális Oktató Kft.-nél elkötelezettek vagyunk a személyes adatai védelme és az azokkal való visszaélések mindenkori megakadályozása iránt.</p>
         <p>Adatvédelmi szabályzatunk elmagyarázza, milyen személyes adatokat gyűjtünk, azokat miért gyűjtjük, hogyan használjuk, továbbá milyen ellenőrzési lehetőségei vannak a személyes adatait illetően, illetve milyen eljárásokat vezettünk be az adatok titkosságának a megóvása érdekében. A szabályzat a [http://www.dioo.hu] gyűjtött személyes adatokra, valamint ezen oldalakon keresztül a kapcsolatfelvétel érdekében megadott adatokra vonatkozik.</p>

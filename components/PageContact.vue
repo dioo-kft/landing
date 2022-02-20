@@ -1,7 +1,7 @@
 <template>
   <div class="page-contact">
-    <b-row class="mb-3" align-h="around">
-      <b-col cols="7" class="page-contact-col-bg p-5">
+    <b-row class="mb-3 m-1 m-sm-0" align-h="around">
+      <b-col cols="12" md="7" class="page-contact-col-bg px-3 py-5 p-sm-5 mb-5 mb-md-0">
         <b-row align-h="between">
             <b-col cols="auto" style="font-size: 1.5rem">Keressen minket!</b-col>
             <b-col cols="auto">
@@ -37,41 +37,36 @@
             </b-col>
         </b-row>
       </b-col>
-      <b-col cols="4" align-self="stretch">
-        <b-row align-h="center" align-content="between" class="h-100">
-          <b-col class="page-contact-col-bg px-3 py-5 h-100">
-            <b-row align-content="between" class="h-100">
-              <b-col>
-                <p style="text-align: center;">A TV műsor miatt vonalaink gyakran foglaltak.
-Jelentkezése számunkra fontos, ezért kérjük, érdeklődését jelezze az alábbi gombok valamelyikével!</p>
+      <b-col cols="12" md="4" align-self="stretch" class="page-contact-col-bg px-3 py-5">
+        <!-- <b-row align-h="center" align-content="between" class="h-100"> -->
+          <!-- <b-col class="page-contact-col-bg px-3 py-5 h-100"> -->
+            <b-row align-content="between" align-h="center" class="h-100">
+              <b-col cols="auto" class="my-2 my-md-0">
+                <p style="text-align: center;" id="load-wrn-text">A TV műsor miatt vonalaink gyakran foglaltak.Jelentkezése számunkra fontos, ezért kérjük, érdeklődését jelezze az alábbi gombok valamelyikével!</p>
               </b-col>
-              <b-col>
+              <b-col cols="12" sm="auto" md="12" order="4" order-md="2" class="my-2 my-md-0">
                 <b-button pill class="button-light-inverted w-100" href="https://forms.clickup.com/f/4bd9e-3121/C0VWX3U1BMFPYUQKSF">
                   Bemutatót kérek
                 </b-button>
               </b-col>
-              <b-col>
+              <b-col cols="12" sm="auto" md="12" order="3" order-md="3" class="my-2 my-md-0">
                 <b-button pill class="button-light-inverted w-100" href="https://forms.clickup.com/f/4bd9e-3001/ZXRM9YPGZ98O8YC29Y">
                   DIOO-t veszek
                 </b-button>
               </b-col>
-            <!-- </b-row>
-          </b-col>
-          <b-col class="page-contact-col-bg px-3 py-5" style="height: 40%;"> -->
-            <!-- <b-row align-content="between" class="h-100"> -->
-              <b-col>
+              <b-col cols="12" sm="auto" md="12" order="5" order-md="4" class="my-2 my-md-0">
                 <b-button pill class="button-light-inverted w-100" href="https://forms.clickup.com/f/4bd9e-3081/UU6XGDB170WL17YDZK">
                   Szülői érdeklődés
                 </b-button>
               </b-col>
-              <b-col>
+              <b-col cols="12" sm="auto" md="12" order="2" order-md="5" class="my-2 my-md-0">
                 <b-button pill class="button-light-inverted w-100" href="https://forms.clickup.com/f/4bd9e-3041/NO44ISE6HP07EN8GGX">
                   Támogatok egy óvodát
                 </b-button>
               </b-col>
             </b-row>
-          </b-col>
-        </b-row>
+          <!-- </b-col>
+        </b-row> -->
       </b-col>
     </b-row>
   </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="page-intro">
     <b-row>
-      <b-col class="text-md-center pb-3 intro-text">
+      <b-col class="text-md-center pb-3 px-4 intro-text">
         <p>
           A DIOO a sikeres iskolakezdéshez szükséges készségeket játékosan
           fejlesztő eszköz; egy új, innovatív, teljes egészében magyar digitális
