@@ -17,6 +17,9 @@
             <nuxt-link to="/#faq">Gy.I.K.</nuxt-link>
           </b-nav-item>
           <b-nav-item>
+            <nuxt-link to="/2020-1-1-1-KKV-START-2021-00400">Fejlesztések</nuxt-link>
+          </b-nav-item>
+          <b-nav-item>
             <nuxt-link to="/#contact">Kapcsolat</nuxt-link>
           </b-nav-item>
       </b-navbar-nav>
