@@ -1,5 +1,6 @@
 export default {
-  router: { base: '/' },
+  // router: { base: '/' },
+  router: { base: '/landing' },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -10,13 +11,18 @@ export default {
   head: {
     title: 'DIOO',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'hu'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
+    ],
+    script: [
+      {
+        // src: '//cdn.cookie-script.com/s/c0d06fc475fa36e4ec07514d808a7bad.js'
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -26,10 +32,12 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/css/main.css',
+    '~/assets/css/cookies.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/node_modules/vanilla-cookieconsent/src/cookieconsent.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -50,6 +58,5 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  build: {}
 }
