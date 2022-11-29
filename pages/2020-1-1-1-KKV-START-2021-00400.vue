@@ -36,14 +36,36 @@
           Hol tartunk most?
         </h4>
         <p>
-          Kutatások magyarországi óvodákban, annak felmérésére, hogy milyen számítógéppel végzett méréseket alkalmaznak
-          a gyakorlatban, melyről általánosságban megállapítható, hogy még nincs gyakorlata nálunk. Másrészt a
-          legszükségesebb mérési területek és mérési módszerek, illetve az óvodapedagógusi gyakorlatok és igények
-          kutatására alapozva.
+          Az elmúlt időszakban annak felmérését végeztük, hogy milyen az óvodák számítástechnikai felszereltsége,
+          illetve milyen mértékű nyitottság, igény mutatkozik a gyermekek képességfejlesztésének és -felmérésének
+          digitális támogatására.
         </p>
         <p>
-          A gyorsfelmérő-teszt kidolgozása a előbbiekben említett kutatások alapján, valamint annak digitális formába
-          öntése, programozása, tesztelése.
+          Azt tapasztaltuk, hogy évről évre szélesedik a digitális eszközök óvodai alkalmazásának területe. Egyre többen
+          alkalmaznak interaktív táblát, tabletet, kifejezetten óvodai tanulási tevékenység támogatására fejlesztett
+          robotokat, illetve vezetnek be - a napi pedagógusi tevékenységet támogató - alkalmazásokat, pl. e-naplót,
+          mellyel egyre inkább biztosítottá válik az intézmények digitális támogatásának felkészültségbeli és technikai
+          háttere.
+        </p>
+        <p>
+          Kutatómunkát végeztünk arról is, hogy alkalmaznak-e digitális mérést a gyermeki képességek feltérképezésére a
+          magyarországi óvodák.
+        </p>
+        <p>
+          Bár alkalmazott digitális mérési eljárással nem találkoztunk, egyértelműen megjelent az objektív
+          képességmérés, a mérés standardizálásának igénye, egyre több intézmény keresi a statisztikával alátámasztott
+          fejlődéskövetés lehetőségét is. Az általunk fejlesztett gyorsfelmérő ennek az igénynek a lefedésére készül.
+        </p>
+        <p>
+          Felmértük a legfontosabb mérési területeket és a digitális mérősor feladatigényeit, ami alapján elkészültünk a
+          feladatsor programozásával. Belső tesztelést követően pedig elkészültünk a felhasználói tesztelésre alkalmas
+          feladatsor első változatával. 31 tesztóvoda részvételével, melyet ezúton is szeretnénk megköszönni Nekik, megtörtént
+          a gyorsfelmérő gyakorlati kipróbálása és minősítése.
+</p>
+<p>
+          Az óvodapedagógusi visszajelzések alapján módosítottuk a
+          feladatokat szakmai és felhasználói szempontból is, így elkészült a program második, a gyermeki képességmérés
+          igényeihez jobban illeszkedő változata. Jelenleg ennek a változatnak a kiértékelése zajlik a tesztóvodákban.
         </p>
         <b-img right src="~assets/img/NKFIA_infoblokk.png" fluid alt="NKFIA infoblokk" id="nkfi-info"></b-img>
       </b-col>
