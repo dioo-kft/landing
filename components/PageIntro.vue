@@ -2,14 +2,8 @@
   <div class="page-intro">
     <b-row>
       <b-col class="text-md-center pb-3 px-4 intro-text">
-        <p>
-          A DIOO a sikeres iskolakezdéshez szükséges készségeket játékosan
-          fejlesztő eszköz; egy új, innovatív, teljes egészében magyar digitális
-          fejlesztés.<br />A Digitális Okosjáték Óvodásoknak (DIOO) billentyűzet
-          és egér nélkül, érintőképernyőn irányítható program, amelyben a
-          feladatokat hangutasítások alapján kapják a gyerekek. Az Okosjáték
-          lehetővé teszi az óvodások iskolaérettségi szintjének mérését és a
-          szükséges képességek erősítését.
+        <p v-for="paragraph in introText">
+          {{paragraph}}
         </p>
       </b-col>
     </b-row>
@@ -72,7 +66,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      introText: this.$store.state.introText,
+    };
   },
   computed: {
     isYoutubeEnabled() {

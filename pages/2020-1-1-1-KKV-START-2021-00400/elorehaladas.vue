@@ -1,7 +1,8 @@
 <template>
   <b-container fluid>
-    <page-section section-id="privacy-policy" title="Digitális gyorsfelmérő teszt" id="nkfi-section">
+    <page-section section-id="privacy-policy" title="Projekt előrehaladása" id="nkfi-section">
       <b-col>
+        <b-breadcrumb :items="items" />
         <p>
           Az Innovációs és Technológiai Minisztérium által a Nemzeti Kutatási, Fejlesztési és Innovációs Hivatal, mint
           kezelőszerv útján meghirdetett KKV START INNOVÁCIÓ pályázati kiírás keretében a DIOO Kft.
@@ -59,15 +60,19 @@
         <p>
           Felmértük a legfontosabb mérési területeket és a digitális mérősor feladatigényeit, ami alapján elkészültünk a
           feladatsor programozásával. Belső tesztelést követően pedig elkészültünk a felhasználói tesztelésre alkalmas
-          feladatsor első változatával. 31 tesztóvoda részvételével, melyet ezúton is szeretnénk megköszönni Nekik, megtörtént
+          feladatsor első változatával. 31 tesztóvoda részvételével, melyet ezúton is szeretnénk megköszönni Nekik,
+          megtörtént
           a gyorsfelmérő gyakorlati kipróbálása és minősítése.
-</p>
-<p>
+        </p>
+        <p>
           Az óvodapedagógusi visszajelzések alapján módosítottuk a
           feladatokat szakmai és felhasználói szempontból is, így elkészült a program második, a gyermeki képességmérés
           igényeihez jobban illeszkedő változata. Jelenleg ennek a változatnak a kiértékelése zajlik a tesztóvodákban.
         </p>
-        <b-img right src="~assets/img/NKFIA_infoblokk.png" fluid alt="NKFIA infoblokk" id="nkfi-info"></b-img>
+        <p style="text-align: right">
+          <b-img src="~assets/img/NKFIA_infoblokk.png" fluid alt="NKFIA infoblokk" id="nkfi-info" />
+        </p>
+        <b-breadcrumb :items="items" />
       </b-col>
     </page-section>
   </b-container>
@@ -75,6 +80,25 @@
 
 <script>
 export default {
+  data() {
+    return {
+      items: [
+        {
+          text: 'Fejlesztések',
+          to: '/2020-1-1-1-KKV-START-2021-00400/#'
+        },
+        {
+          text: '2020-1-1-1-KKV-START-2021-00400',
+          to: '/2020-1-1-1-KKV-START-2021-00400/#'
+        },
+        {
+          text: 'Előrehaladás',
+          active: true
+        },
+      ]
+      ,
+    }
+  },
   computed: {
     cookieConsent() {
       return this.$store.state.cookieConsent;

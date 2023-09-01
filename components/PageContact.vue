@@ -19,13 +19,13 @@
           <b-col cols="auto">
             <h5>Fenntartóknak, Pedagógusoknak</h5>
             <p>Kapcsolattartó: Konkolyi Sándor</p>
-            <p style="margin-bottom: 0; padding-bottom: 0">tel.: &plus;&#51;&#54;&#032;&#51;&#48;&#032;&#49;&#57;&#54;&#032;&#54;&#56;&#50;&#50;</p>
+            <p style="margin-bottom: 0; padding-bottom: 0">tel.: &#43;&#51;&#54;&#32;&#51;&#48;&#32;&#53;&#50;&#54;&#32;&#48;&#52;&#53;&#55;&#10;</p>
             <p style="font-size: 12px">Hétköznaponként 8:00 - 17:00 között hívható.</p>
           </b-col>
           <b-col cols="auto">
             <h5>Társadalmi Felelősségvállalás, Vállalatoknak</h5>
             <p>Kapcsolattartó: Konkolyi Szilvia</p>
-            <p style="margin-bottom: 0; padding-bottom: 0">tel.: +&#051;&#054;&#032;&#051;&#048;&#032;&#056;&#055;&#057;&#032;&#056;&#055;&#056;&#053;</p>
+            <p style="margin-bottom: 0; padding-bottom: 0">tel.: &#43;&#51;&#54;&#32;&#51;&#48;&#32;&#53;&#50;&#54;&#32;&#48;&#52;&#53;&#55;&#10;</p>
             <p style="font-size: 12px">Hétköznaponként 8:00 - 17:00 között hívható.</p>
           </b-col>
         </b-row>
