@@ -58,13 +58,12 @@
 export default {
   computed: {
     cookieConsent() {
-      return this.$store.state.cookieConsent;
+      return this.$store.state.cookies.consent;
     },
   },
   methods: {
     showCookieConsent() {
-      this.$store.state.cookieConsent.showSettings();
-      console.log("show cookie consent");
+      this.$store.state.cookies.consent.showSettings();
     },
   },
 };

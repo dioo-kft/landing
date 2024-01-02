@@ -1,15 +1,6 @@
 export const state = () => ({
-  cookieConsent: initCookieConsent(),
-    cookies: 
-    {
-        youtube: 
-        {
-          toggle: {
-            value: 'third-party_youtube',
-            enabled: true,
-            readonly: false,
-      }
-    },
+  intro: {
+    title: "Mi a DIOO?",
   },
   introText: [
     "A DIOO a sikeres iskolakezdéshez szükséges készségeket játékosan fejlesztő eszköz; egy új, innovatív, teljes egészében magyar digitális fejlesztés.",
@@ -79,12 +70,3 @@ export const state = () => ({
     },
   ],
 })
-
-export const mutations = {
-  enableYoutubeCookies(state) {
-    state.cookies.youtube.toggle.enabled = true
-  },
-  disableYoutubeCookies(state) {
-    state.cookies.youtube.toggle.enabled = false
-  },
-}

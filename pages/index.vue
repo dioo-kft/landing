@@ -4,7 +4,7 @@
       <div class="bg-shape">
       <page-cover /></div>
     </page-section>
-    <page-section section-id="intro" title="Mi a DIOO?">
+    <page-section section-id="intro" :title="intro.title">
       <page-intro />
     </page-section>
     <page-section section-id="faq" title="Gyakran Ismételt kérdések">
@@ -52,6 +52,12 @@ export default {
   data() {
     return {
       items: this.$store.state.faq,
+      intro: {
+        title: this.$store.state.intro.title,
+      },
+      test: {
+      title: "test 1",
+      },
     };
   },
 }

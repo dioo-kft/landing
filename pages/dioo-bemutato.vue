@@ -148,7 +148,7 @@ export default {
   },
   methods: {
     enableYoutubeCookies() {
-      this.$store.state.cookieConsent.accept(
+      this.$store.state.cookies.consent.accept(
         this.$store.state.cookies.youtube.toggle.value
       );
     },
