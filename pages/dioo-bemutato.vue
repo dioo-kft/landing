@@ -20,30 +20,26 @@
         </b-row>
         <b-row>
           <b-col class="text-md-left pb-3 px-4 intro-text" style="font-size: 1rem;" cols="12" md="7" lg="6">
-            <p v-for="paragraph in introText">
+            <p v-for="paragraph in description">
               {{ paragraph }}
             </p>
           </b-col>
           <b-col align-self="stretch">
             <b-overlay :show="!isYoutubeEnabled" opacity="1" variant="light" style="color: black">
-              <b-embed v-if="isYoutubeEnabled" type="iframe" aspect="16by9"
-                src="https://www.youtube-nocookie.com/embed/7XFOUAdqHmU" allowfullscreen></b-embed>
-              <b-img v-else src="https://via.placeholder.com/900x506?text=." fluid alt="DIOO Bemutató videó"></b-img>
+              <b-embed v-if="isYoutubeEnabled" type="iframe" aspect="16by9" :src="videoSrc" allowfullscreen></b-embed>
+              <b-img v-else src="https://via.placeholder.com/900x506?text=." fluid :alt="videoAlt"></b-img>
               <template #overlay>
                 <div class="text-center p-3 overlay-content">
                   <b-icon icon="exclamation-triangle-fill" font-scale="3" animation="cylon"
                     class="d-none d-sm-inline-block"></b-icon>
-                  <p id="cancel-label">
-                    A videó megtekintéséhez kérem engedélyezze a YouTube által
-                    használt sütiket! ↓
-                  </p>
+                  <p id="cancel-label">{{ videoCookieWarning }}</p>
                   <p style="font-size: 12px">
-                    Vagy a videót a YouTube oldalán is elérheti a
-                    <a href="https://www.youtube.com/watch?v=7XFOUAdqHmU">https://www.youtube.com/watch?v=7XFOUAdqHmU</a>
-                    linken.
+                    <template>
+                      <div v-html="videoCookieAlt"></div>
+                    </template>
                   </p>
                   <b-button ref="cancel" variant="outline-success" size="sm" @click="enableYoutubeCookies">
-                    YouTube által használt sütik engedélyezése
+                    {{ videoEnableCookiesButton }}
                   </b-button>
                 </div>
               </template>
@@ -62,14 +58,14 @@
               <b-collapse :id="'accordion-faq'" v-model="faqVisible">
                 <b-card-body class="faq-answer px-0">
                   <b-col class="accordion px-0" role="tablist" align-self="stretch">
-                    <b-card v-for="id in items.length" :key="id" no-body class="mb-1">
+                    <b-card v-for="id in FAQ.length" :key="id" no-body class="mb-1">
                       <b-card-header header-tag="header" class="p-1" role="tab">
-                        <b-button block v-b-toggle="'accordion-' + id" variant="info" class="faq-question">{{ items[id -
+                        <b-button block v-b-toggle="'accordion-' + id" variant="info" class="faq-question">{{ FAQ[id -
                           1].question }}</b-button>
                       </b-card-header>
                       <b-collapse visible :id="'accordion-' + id" accordion="my-accordion" role="tabpanel">
                         <b-card-body class="faq-answer">
-                          <b-card-text>{{ items[id - 1].answer }}</b-card-text>
+                          <b-card-text>{{ FAQ[id - 1].answer }}</b-card-text>
                         </b-card-body>
                       </b-collapse>
                     </b-card>
@@ -118,32 +114,35 @@ export default {
   layout: 'landing',
   data() {
     return {
-      introText: this.$store.state.introText,
-      form: {
-        email: '',
-        name: '',
-        coname: '',
-        coaddr: '',
-        tel: '',
-        date: '',
-        msg: '',
-        gdpr: []
-      },
-      foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
       show: true,
-      items: this.$store.state.faq,
       faqVisible: false,
+      videoSrc: this.$store.state.intro.video.link,
     };
   },
   computed: {
     isYoutubeEnabled() {
       return this.$store.state.cookies.youtube.toggle.enabled;
     },
-    src() {
-      if (this.$store.state.cookies.youtube.toggle.enabled === true) {
-        return "https://www.youtube.com/embed/7XFOUAdqHmU";
-      }
-      return "";
+    lang() {
+      return this.$store.state.cookies.language;
+    },
+    description() {
+      return this.$store.getters['intro/getDescription'](this.lang);
+    },
+    videoAlt() {
+      return this.$store.getters['intro/getVideoAlt'](this.lang);
+    },
+    videoCookieWarning() {
+      return this.$store.getters['intro/getVideoCookieWarning'](this.lang);
+    },
+    videoCookieAlt() {
+      return this.$store.getters['intro/getVideoCookieAlt'](this.lang);
+    },
+    videoEnableCookiesButton() {
+      return this.$store.getters['intro/getVideoEnableCookiesButton'](this.lang);
+    },
+    FAQ () {
+      return this.$store.getters['faq/getQuestions'](this.lang);
     },
   },
   methods: {
@@ -152,23 +151,6 @@ export default {
         this.$store.state.cookies.youtube.toggle.value
       );
     },
-    onSubmit(event) {
-      event.preventDefault()
-      alert(JSON.stringify(this.form))
-    },
-    onReset(event) {
-      event.preventDefault()
-      // Reset our form values
-      this.form.email = ''
-      this.form.name = ''
-      this.form.food = null
-      this.form.checked = []
-      // Trick to reset/clear native browser form validation state
-      this.show = false
-      this.$nextTick(() => {
-        this.show = true
-      })
-    }
   },
 };
 </script>
@@ -192,4 +174,5 @@ export default {
   font-size: 1.4em;
   padding: 0 0.3em;
   background: var(--light-bg-color);
-}</style>
+}
+</style>

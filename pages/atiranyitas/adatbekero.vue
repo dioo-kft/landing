@@ -48,7 +48,6 @@ export default {
   layout: 'landing',
   data() {
     return {
-      introText: this.$store.state.introText,
       form: {
         email: '',
         name: '',
