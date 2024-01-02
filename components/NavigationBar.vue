@@ -22,7 +22,33 @@
           <b-nav-item>
             <nuxt-link to="/#contact">Kapcsolat</nuxt-link>
           </b-nav-item>
+          <b-nav-item>
+            <b-button
+          pill
+          class="button-brand-color my-1"
+          @click="toggleLang"
+          >{{ lang === "hu" ? "en" : "hu" }}</b-button>
+          </b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
 </template>
+
+<script>
+export default {
+  data() {
+    return {};
+  },
+  computed: {
+    lang () {
+      return this.$store.state.cookies.language;
+    },
+  },
+  methods: {
+    toggleLang() {
+      if (this.lang === "en") this.$store.commit("cookies/setLanguage", "hu");
+      else this.$store.commit("cookies/setLanguage", "en");
+    },
+  },
+}
+</script>

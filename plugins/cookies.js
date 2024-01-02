@@ -2,6 +2,7 @@ export default ({ app }, inject) => {
   inject('configureCookieSettings',
     function a() {
       var store = this.$store;
+
       this.$store.state.cookies.consent.run({
         current_lang: "hu",
         autoclear_cookies: true,
@@ -222,5 +223,7 @@ export default ({ app }, inject) => {
           }
         },
       });
+
+      this.$store.commit("cookies/setLanguage", this.$store.state.cookies.consent.getConfig('current_lang'));
     })
 }

@@ -1,7 +1,4 @@
 export const state = () => ({
-  intro: {
-    title: "Mi a DIOO?",
-  },
   introText: [
     "A DIOO a sikeres iskolakezdéshez szükséges készségeket játékosan fejlesztő eszköz; egy új, innovatív, teljes egészében magyar digitális fejlesztés.",
     "A Digitális Okosjáték Óvodásoknak (DIOO) billentyűzet és egér nélkül, érintőképernyőn irányítható program, amelyben a feladatokat hangutasítások alapján kapják a gyerekek. Az Okosjáték lehetővé teszi az óvodások iskolaérettségi szintjének mérését és a szükséges képességek erősítését.",
