@@ -1,30 +1,30 @@
 export const state = () => ({
   title: {
-    hu: "",
-    en: "",
+    hu: "Rólunk mondták",
+    en: "Testimonials",
   },
   cards: {
     hu: [
       {
-        title: "",
-        text: "",
-        author: "",
+        title: "Napi foglalkozás",
+        quote: "A hagyományos óvodapedagógiai módszerek kiegészítéseként tökéletesen sikerült beépíteni a DIOO-t az óvodások mindennapjaiba, akik így egyre otthonosabban mozognak az elektronikus térben is.",
+        author: "Hajdúnánás, óvodapedagógus",
     },
       {
-        title: "",
-        text: "",
-        author: "",
+        title: "Okosjáték",
+        quote: "[…] fantasztikus értéket láttam meg benne, nemcsak, mint fejlesztő eszköz, hanem mint egy nagyon- nagyon okos, értékes napi játék.",
+        author: "Gyöngyös, pedagógus, szakértő",
     },
       {
-        title: "",
-        text: "",
-        author: "",
+        title: "Játékuniverzum",
+        quote: "Az érintőképernyős eszköz egy digitális játékuniverzumot rejt magába, s úgy tanítja a gyerekeket, hogy mindezt játéknak élik meg.",
+        author: "egy kelet-magyarországi óvoda vezetője",
     },
     ],
     en: [
       {
         title: "test title",
-        text: "text",
+        quote: "text",
         author: "author",
     },],
   },

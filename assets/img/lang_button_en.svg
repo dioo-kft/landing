@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 8.9999998 3"
+   version="1.1"
+   id="svg16"
+   sodipodi:docname="lang_button_en.svg"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   width="2.3812499mm"
+   height="0.79374999mm"
+   inkscape:export-filename="/Users/szilviakonkolyi/Downloads/lang_button_hu_1.png"
+   inkscape:export-xdpi="1066.6666"
+   inkscape:export-ydpi="1066.6666">
+  <metadata
+     id="metadata22">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs20">
+    <clipPath
+       id="s">
+      <path
+         d="M 0,0 V 30 H 60 V 0 Z"
+         id="path23" />
+    </clipPath>
+    <clipPath
+       id="t">
+      <path
+         d="m 30,15 h 30 v 15 z m 0,0 V 30 H 0 Z m 0,0 H 0 V 0 Z m 0,0 V 0 h 30 z"
+         id="path26" />
+    </clipPath>
+    <clipPath
+       id="s-1">
+      <path
+         d="M 0,0 V 30 H 60 V 0 Z"
+         id="path23-9" />
+    </clipPath>
+    <clipPath
+       id="t-3">
+      <path
+         d="m 30,15 h 30 v 15 z m 0,0 V 30 H 0 Z m 0,0 H 0 V 0 Z m 0,0 V 0 h 30 z"
+         id="path26-1" />
+    </clipPath>
+    <clipPath
+       id="s-0">
+      <path
+         d="M 0,0 V 30 H 60 V 0 Z"
+         id="path23-0" />
+    </clipPath>
+    <clipPath
+       id="t-6">
+      <path
+         d="m 30,15 h 30 v 15 z m 0,0 V 30 H 0 Z m 0,0 H 0 V 0 Z m 0,0 V 0 h 30 z"
+         id="path26-2" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     showguides="false"
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1269"
+     inkscape:window-height="762"
+     id="namedview18"
+     showgrid="false"
+     inkscape:zoom="40"
+     inkscape:cx="5.6059997"
+     inkscape:cy="1.449865"
+     inkscape:window-x="69"
+     inkscape:window-y="51"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg16"
+     units="mm"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <path
+     fill="#436f4d"
+     d="M 0,0 H 6 V 3 H 0 Z"
+     id="path10" />
+  <path
+     fill="#ffffff"
+     d="M 0,0 H 6 V 2 H 0 Z"
+     id="path12" />
+  <path
+     fill="#cd2a3e"
+     d="M 0,0 H 6 V 1 H 0 Z"
+     id="path14" />
+  <path
+     id="path12-8"
+     d="M 6,0 H 9 V 3 H 6 Z"
+     fill="#ffffff"
+     style="stroke-width:0.866022;fill:#012169;fill-opacity:1" />
+  <text
+     transform="translate(-0.73843686,0.87139757)"
+     id="text21"
+     y="1.2468828"
+     x="7.0618906"
+     style="font-style:normal;font-weight:normal;font-size:1.70079000000000002px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:3.41496;fill:#ffffff;fill-opacity:1;stroke:none;"
+     xml:space="preserve"><tspan
+       x="7.0618906"
+       y="1.2468828"><tspan
+         style="fill:#ffffff;fill-opacity:1">EN</tspan></tspan></text>
+  <g
+     transform="matrix(-0.1,0,0,0,3,-297.025)"
+     clip-path="url(#s-1)"
+     id="g39">
+    <path
+       d="M 0,0 V 30 H 60 V 0 Z"
+       fill="#012169"
+       id="path29" />
+    <path
+       d="M 0,0 60,30 M 60,0 0,30"
+       stroke="#ffffff"
+       stroke-width="6"
+       id="path31" />
+    <path
+       d="M 0,0 60,30 M 60,0 0,30"
+       clip-path="url(#t-3)"
+       stroke="#c8102e"
+       stroke-width="4"
+       id="path33" />
+    <path
+       d="M 30,0 V 30 M 0,15 h 60"
+       stroke="#ffffff"
+       stroke-width="10"
+       id="path35" />
+    <path
+       d="M 30,0 V 30 M 0,15 h 60"
+       stroke="#c8102e"
+       stroke-width="6"
+       id="path37" />
+  </g>
+  <g
+     transform="scale(0.1)"
+     clip-path="url(#s-0)"
+     id="g39-4">
+    <path
+       d="M 0,0 V 30 H 60 V 0 Z"
+       fill="#012169"
+       id="path29-7" />
+    <path
+       d="M 0,0 60,30 M 60,0 0,30"
+       stroke="#ffffff"
+       stroke-width="6"
+       id="path31-4" />
+    <path
+       d="M 0,0 60,30 M 60,0 0,30"
+       clip-path="url(#t-6)"
+       stroke="#c8102e"
+       stroke-width="4"
+       id="path33-1" />
+    <path
+       d="M 30,0 V 30 M 0,15 h 60"
+       stroke="#ffffff"
+       stroke-width="10"
+       id="path35-8" />
+    <path
+       d="M 30,0 V 30 M 0,15 h 60"
+       stroke="#c8102e"
+       stroke-width="6"
+       id="path37-5" />
+  </g>
+</svg>

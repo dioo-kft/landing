@@ -7,21 +7,51 @@ export const state = () => ({
     hu: "Visszahívást kérek",
     en: "Request a Call Back",
   },
-  purcheseRedirect: {
-    hu: "DIOO-t veszek",
-    en: "Order DIOO",
-  },
-  supportRedirect: {
-    hu: "Támogatok egy óvodát",
-    en: "Support an Institution",
-  },
-  introRedirect: {
-    hu: "Bemutatót kérek",
-    en: "Request more info",
-  },
-  parentsRedirect: {
-    hu: "Szülői érdeklődés",
-    en: "Parental Inquiery",
+  buttons: {
+    hu: [{
+      id: 0,
+      text: "Bemutatót kérek",
+      link: "https://forms.clickup.com/f/4bd9e-3121/C0VWX3U1BMFPYUQKSF",
+      show: true,
+    }, {
+      id: 1,
+      text: "DIOO-t veszek",
+      link: "https://forms.clickup.com/f/4bd9e-3001/ZXRM9YPGZ98O8YC29Y",
+      show: true,
+    }, {
+      id: 2,
+      text: "Szülői érdeklődés",
+      link: "https://forms.clickup.com/f/4bd9e-3081/UU6XGDB170WL17YDZK",
+      show: true,
+    }, {
+      id: 3,
+      text: "Támogatok egy óvodát",
+      link: "https://forms.clickup.com/f/4bd9e-3041/NO44ISE6HP07EN8GGX",
+      show: true,
+    },
+    ],
+    en: [ {
+      id: 0,
+      text: "Request more info",
+      link: "TODO",
+      show: true,
+    },{
+      id: 1,
+      text: "Order DIOO",
+      link: "TODO",
+      show: true,
+    },  {
+      id: 2,
+      text: "Parental Inquiery",
+      link: "",
+      show: false,
+    },{
+      id: 3,
+      text: "Support an Institution",
+      link: "TODO",
+      show: true,
+    },
+    ],
   },
 })
 
@@ -32,16 +62,19 @@ export const getters = {
   callBack: (state) => (lang) => {
     return state.callBack[lang];
   },
-  purcheseRedirect: (state) => (lang) => {
-    return state.purcheseRedirect[lang];
+  buttons: (state) => (lang) => {
+    return state.buttons[lang].filter(e => e.show === true);
   },
-  supportRedirect: (state) => (lang) => {
-    return state.supportRedirect[lang];
-  },
-  introRedirect: (state) => (lang) => {
-    return state.introRedirect[lang];
-  },
-  parentsRedirect: (state) => (lang) => {
-    return state.parentsRedirect[lang];
+}
+
+export const mutations = {
+  enableAllValidLinks: (state) => {
+    var langs = ["hu", "en"];
+    for (var l of langs) {
+      for (var e of state.links[l]) {
+        if (e.link !== "") e.show = true;
+        else e.show = false;
+      }
+    }
   },
 }

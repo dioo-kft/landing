@@ -11,7 +11,8 @@ export default {
   data() {return {}},
   
   mounted: function () {
-    this.$configureCookieSettings()
+    this.$configureCookieSettings();
+    this.$store.commit("footer/enableAllValidLinks");
   },
 };
 </script>

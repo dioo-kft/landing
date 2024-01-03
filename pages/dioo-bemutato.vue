@@ -12,7 +12,7 @@
             <b-img src="~assets/img/tunder.png" fluid class="py-0 my-0" alt="DIOO tündér"></b-img>
           </b-col>
           <b-col class="text-center page-section-title mb-4">
-            <p>Mi a DIOO?</p>
+            <p>{{ title }}</p>
           </b-col>
           <b-col cols="2" md="1" class="d-xl-none">
             <b-img src="~assets/img/tunder-mirror.png" fluid class="py-0 my-0" alt="DIOO tündér"></b-img>
@@ -52,8 +52,7 @@
               <b-card-header header-tag="header" class="p-1" role="tab">
                 <b-button block variant="info" :class="faqVisible ? 'faq-question' : 'collapsed faq-question'"
                   :aria-expanded="faqVisible ? 'true' : 'false'" aria-controls="accordion-faq"
-                  @click="faqVisible = !faqVisible">Gyakran Ismételt
-                  Kérdések</b-button>
+                  @click="faqVisible = !faqVisible">{{ FAQTitle }}</b-button>
               </b-card-header>
               <b-collapse :id="'accordion-faq'" v-model="faqVisible">
                 <b-card-body class="faq-answer px-0">
@@ -77,14 +76,14 @@
         </b-row>
         <b-row class="text-center page-section-title mt-3 justify-content-center">
           <b-col>
-            <p>Még több kérdése van?</p>
+            <p>{{ moreQuestions }}</p>
           </b-col>
         </b-row>
         <b-row class="justify-content-center">
           <b-col class="text-md-left pb-3 px-4 intro-text" cols="12" style="font-size: 1rem;">
             <b-button pill class="button-light-inverted w-100" style="font-weight: 500;"
               href="https://forms.clickup.com/f/4bd9e-3121/C0VWX3U1BMFPYUQKSF">
-              Visszahívást kérek!
+            {{ callBack }}
             </b-button>
           </b-col>
         </b-row>
@@ -95,9 +94,8 @@
         </b-row>
         <b-row class="justify-content-center">
           <b-col class="text-center py-3 px-4 intro-text" cols="12" style="font-size: 1rem;">
-            <p class="contact-email">Üzenjen nekünk az <a
-                href="mailto:info@dioo.hu">&#105;&#110;&#102;&#111;&#064;&#100;&#105;&#111;&#111;&#046;&#104;&#117;</a>
-              email címen!
+            <p class="contact-email">{{emailUs}} <a
+                href="mailto:info@dioo.hu">&#105;&#110;&#102;&#111;&#064;&#100;&#105;&#111;&#111;&#046;&#104;&#117;</a>!
             </p>
           </b-col>
         </b-row>
@@ -126,24 +124,18 @@ export default {
     lang() {
       return this.$store.state.cookies.language;
     },
-    description() {
-      return this.$store.getters['intro/getDescription'](this.lang);
-    },
-    videoAlt() {
-      return this.$store.getters['intro/getVideoAlt'](this.lang);
-    },
-    videoCookieWarning() {
-      return this.$store.getters['intro/getVideoCookieWarning'](this.lang);
-    },
-    videoCookieAlt() {
-      return this.$store.getters['intro/getVideoCookieAlt'](this.lang);
-    },
-    videoEnableCookiesButton() {
-      return this.$store.getters['intro/getVideoEnableCookiesButton'](this.lang);
-    },
-    FAQ () {
-      return this.$store.getters['faq/getQuestions'](this.lang);
-    },
+    title() {return this.$store.getters['intro/getTitle'](this.lang);},
+    description() {return this.$store.getters['intro/getDescription'](this.lang);},
+    videoAlt() {return this.$store.getters['intro/getVideoAlt'](this.lang);},
+    videoCookieWarning() {return this.$store.getters['intro/getVideoCookieWarning'](this.lang);},
+    videoCookieAlt() {return this.$store.getters['intro/getVideoCookieAlt'](this.lang);},
+    videoEnableCookiesButton() {return this.$store.getters['intro/getVideoEnableCookiesButton'](this.lang);},
+    FAQ () {return this.$store.getters['faq/getQuestions'](this.lang);},
+    FAQTitle () {return this.$store.getters['faq/title'](this.lang);},
+    moreQuestions () {return this.$store.getters['onepager/moreQuestions'](this.lang);},
+    orLineBr () {return this.$store.getters['onepager/orLineBr'](this.lang);},
+    emailUs () {return this.$store.getters['onepager/emailUs'](this.lang);},
+    callBack () {return this.$store.getters['buttons/callBack'](this.lang);},
   },
   methods: {
     enableYoutubeCookies() {

@@ -23,12 +23,12 @@
         </b-card>
       </b-col>
     </page-section>
-    <page-section section-id="testimonial" title="Rólunk mondták" align-self="stretch">
+    <page-section section-id="testimonial" :title="testimonialsTitle" align-self="stretch">
       <b-col>
         <testimonial-carousel />
       </b-col>
     </page-section>
-    <page-section section-id="contact" title="Kapcsolat">
+    <page-section section-id="contact" :title="contactTitle">
       <page-contact />
     </page-section>
   </b-container>
@@ -40,17 +40,23 @@ export default {
     return {};
   },
   computed: {
-    lang () {
+    lang() {
       return this.$store.state.cookies.language;
     },
     introTitle() {
       return this.$store.getters['intro/getTitle'](this.lang);
     },
     faqTitle() {
-      return this.$store.getters['faq/getTitle'](this.lang);
+      return this.$store.getters['faq/title'](this.lang);
     },
-    FAQ () {
+    FAQ() {
       return this.$store.getters['faq/getQuestions'](this.lang);
+    },
+    testimonialsTitle() {
+      return this.$store.getters['testimonials/title'](this.lang);
+    },
+    contactTitle() {
+      return this.$store.getters['contact/title'](this.lang);
     },
   },
 }

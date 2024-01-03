@@ -1,33 +1,79 @@
 export const state = () => ({
   copyright: {
-    hu: "Copyright © 2023 DIOO Digitális Oktató | Minden jog fenntartva.",
-    en: "Copyright © 2023 DIOO Kft.",
+    hu: "DIOO Digitális Oktató | Minden jog fenntartva.",
+    en: "DIOO Kft.",
   },
-  forKindergartens: {
-    hu: "Pedagógusi Felület",
-    en: "For Kindergartens",
-  },
-  cookiePolicy: {
-    hu: "Cookie Tájékoztató",
-    en: "Cookie Policy",
-  },
-  privacyPolicy: {
-    hu: "GDPR Adatvédelmi Szabályzat",
-    en: "Privacy Policy",
+  links: {
+    hu: [
+      {
+        id: 0,
+        title: "Pedagógusi Felület",
+        link: "https://system.dioo.hu/ovonok#login_form",
+        show: true,
+      },
+      {
+        id: 1,
+        title: "Cookie Tájékoztató",
+        link: "/cookie-tajekoztato",
+        show: true,
+      },
+      {
+        id: 2,
+        title: "GDPR Adatvédelmi Szabályzat",
+        link: "/adatvedelmi-szabalyzat",
+        show: true,
+      },
+    ],
+    en: [
+      {
+        id: 0,
+        title: "For Kindergartens",
+        link: "",
+        show: true,
+      },
+      {
+        id: 1,
+        title: "Cookie Policy",
+        link: "/cookie-tajekoztato",
+        show: true,
+      },
+      {
+        id: 2,
+        title: "Privacy Policy",
+        link: "/adatvedelmi-szabalyzat",
+        show: true,
+      },],
   },
 })
 
 export const getters = {
   copyright: (state) => (lang) => {
-    return state.contactUs[lang];
+    return state.copyright[lang];
   },
-  forKindergartens: (state) => (lang) => {
-    return state.contactUs[lang];
+  links: (state) => (lang) => {
+    return state.links[lang].filter(e => e.show === true);
   },
-  cookiePolicy: (state) => (lang) => {
-    return state.contactUs[lang];
+}
+
+export const mutations = {
+  enableAllValidLinks: (state) => {
+    var langs = ["hu", "en"];
+    for (var l of langs) {
+      for (var e of state.links[l]) {
+        if (e.link !== "") e.show = true;
+        else e.show = false;
+      }
+    }
   },
-  privacyPolicy: (state) => (lang) => {
-    return state.contactUs[lang];
+  disableForKindergartens: (state) => {
+    var langs = ["hu", "en"];
+    for (var l of langs) {
+      for (var e of state.links[l]) {
+        if (e.id === 0) {
+          e.show = false;
+          break;
+        }
+      }
+    }
   },
 }

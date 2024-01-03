@@ -1,7 +1,8 @@
 <template>
   <div>
     <Nuxt />
-    <b-container fluid class="page-footer my-0 py-3">
+    <page-footer />
+    <!-- <b-container fluid class="page-footer my-0 py-3">
       <b-row align-h="between">
         <b-col cols="auto">
           <p>Copyright © 2023 DIOO Digitális Oktató | Minden jog fenntartva.</p>
@@ -17,7 +18,7 @@
           </b-row>
         </b-col>
       </b-row>
-    </b-container>
+    </b-container> -->
   </div>
 </template>
 
@@ -27,6 +28,7 @@ export default {
 
   mounted: function () {
     this.$configureCookieSettings()
+    this.$store.commit("footer/disableForKindergartens");
   },
 };
 </script>

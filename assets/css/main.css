@@ -46,7 +46,7 @@
     opacity: 1;
 }
 
-a.nuxt-link-active{
+a.nuxt-link-active {
     color: var(--light-bg-color);
 }
 
@@ -111,7 +111,7 @@ a.nuxt-link-active{
 @media only screen and (min-width: 576px) {
     #cover {
         background-image: linear-gradient(to left bottom, #233245, #4c4d63 18%, #766b80 28%, #a08a9c 35%, #caacb7 42%, #deb7bc 49%, #f0c3bf 56%, #ffd0c0 63%, #ffcaa3 70%, #ffc980 77%, #ffcc59 84%, #fdd327 92%);
-    } 
+    }
 }
 
 /* #cover-card { // TODO: neumorphism
@@ -344,7 +344,7 @@ p {
     .carousel-inner {
         height: 420px;
     }
-    
+
     .carousel-caption h3 {
         font-size: 1.5rem;
     }
@@ -452,12 +452,12 @@ p {
 #privacy-policy ul {
     list-style: none;
 }
-  
+
 #privacy-policy ul li::before {
-content: "\2022";
-color: var(--brand-color);
-font-weight: bold;
-display: inline-block; 
-width: 1em;
-margin-left: -1em;
+    content: "\2022";
+    color: var(--brand-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }

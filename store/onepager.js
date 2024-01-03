@@ -8,8 +8,8 @@ export const state = () => ({
     en: "OR",
   },
   emailUs: {
-    hu: "Üzenjen nekünk az info@dioo.hu email címen!",
-    en: "Reach out to us at infoo@dioo.hu!",
+    hu: "Üzenjen nekünk emailben:",
+    en: "Reach out to us at",
   },
 })
 

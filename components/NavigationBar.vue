@@ -10,25 +10,17 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto" v-b-scrollspy="0">
+        <b-nav-text v-for="item in menuItems" :key="item.id">
           <b-nav-item>
-            <nuxt-link to="/#intro">Mi a DIOO?</nuxt-link>
+            <nuxt-link :to="item.link">{{ item.title }}</nuxt-link>
           </b-nav-item>
-          <b-nav-item>
-            <nuxt-link to="/#faq">Gy.I.K.</nuxt-link>
-          </b-nav-item>
-          <b-nav-item>
-            <nuxt-link to="/2020-1-1-1-KKV-START-2021-00400">Fejlesztések</nuxt-link>
-          </b-nav-item>
-          <b-nav-item>
-            <nuxt-link to="/#contact">Kapcsolat</nuxt-link>
-          </b-nav-item>
-          <b-nav-item>
-            <b-button
-          pill
-          class="button-brand-color my-1"
-          @click="toggleLang"
-          >{{ lang === "hu" ? "en" : "hu" }}</b-button>
-          </b-nav-item>
+        </b-nav-text>
+        <b-nav-item>
+          <b-button class="button-language" @click="toggleLang">
+            <img v-if='lang === "en"' class="language-button-img" src="~/assets/img/lang_button_hu.svg" />
+            <img v-else class="language-button-img" src="~/assets/img/lang_button_en.svg" />
+          </b-button>
+        </b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -40,8 +32,11 @@ export default {
     return {};
   },
   computed: {
-    lang () {
+    lang() {
       return this.$store.state.cookies.language;
+    },
+    menuItems() {
+      return this.$store.getters['header/menuItems'](this.lang);
     },
   },
   methods: {
@@ -52,3 +47,22 @@ export default {
   },
 }
 </script>
+
+<style>
+.button-language {
+  background-color:var(--brand-color);
+  border-color: var(--brand-color);
+  padding: 0;
+}
+
+.button-language:hover {
+  background-color:var(--brand-color);
+  border-color: var(--brand-color);
+}
+
+.language-button-img {
+  max-width: 100px;
+  width: 100px;
+  border-radius: 4px;
+}
+</style>

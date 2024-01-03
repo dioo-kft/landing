@@ -77,7 +77,7 @@ export const state = () => ({
 })
 
 export const getters = {
-  getTitle: (state) => (lang) => {
+  title: (state) => (lang) => {
     return state.title[lang];
   },
   getQuestions: (state) => (lang) => {
