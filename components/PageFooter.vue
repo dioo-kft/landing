@@ -7,7 +7,7 @@
       <b-col cols="auto">
         <b-row>
           <b-col v-for="item in links" v-bind:key="item.id" cols="auto">
-            <a :href="item.link">{{ item.title }}</a>
+            <b-link :href="item.link.href" :to="item.link.to">{{ item.title }}</b-link>
           </b-col>
         </b-row>
       </b-col>
@@ -31,6 +31,12 @@ export default {
     },
     links() {
       return this.$store.getters['footer/links'](this.lang);
+    },
+    ped() {
+      return "https://system.dioo.hu/ovonok#login_form"
+    },
+    cookie() {
+      return "/cookie-tajekoztato"
     },
   },
 }

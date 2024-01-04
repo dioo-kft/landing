@@ -174,7 +174,7 @@ export default ({ app }, inject) => {
               blocks: [
                 {
                   title: 'Cookie usage 📢',
-                  description: 'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="#" class="cc-link">privacy policy</a>.'
+                  description: 'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="/cookie-tajekoztato">Cookie Policy</a>.'
                 }, {
                   title: 'Strictly necessary cookies',
                   description: 'These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly',
@@ -183,40 +183,19 @@ export default ({ app }, inject) => {
                     enabled: true,
                     readonly: true          // cookie categories with readonly=true are all treated as "necessary cookies"
                   }
-                }, {
-                  title: 'Performance and Analytics cookies',
-                  description: 'These cookies allow the website to remember the choices you have made in the past',
+                },
+                {
+                  title: "Third Party cookies - YouTube(Google)",
+                  description:
+                    'These cookies are set by YouTube to track the viewing of embedded videos. Detailed information about the service is available at the following links: <a href="https://policies.google.com/privacy?hl=hu">https://policies.google.com/privacy?hl=hu</a><br /><a href="https://support.google.com/youtube/answer/171780?hl=hu">https://support.google.com/youtube/answer/171780?hl=hu</a>',
                   toggle: {
-                    value: 'analytics',     // your cookie category
-                    enabled: false,
-                    readonly: false
+                    value: "third-party_youtube",
+                    enabled: true,
+                    readonly: false, // cookie categories with readonly=true are all treated as "necessary cookies"
                   },
-                  cookie_table: [             // list of all expected cookies
-                    {
-                      col1: '^_ga',       // match all cookies starting with "_ga"
-                      col2: 'google.com',
-                      col3: '2 years',
-                      col4: 'description ...',
-                      is_regex: true
-                    },
-                    {
-                      col1: '_gid',
-                      col2: 'google.com',
-                      col3: '1 day',
-                      col4: 'description ...',
-                    }
-                  ]
-                }, {
-                  title: 'Advertisement and Targeting cookies',
-                  description: 'These cookies collect information about how you use the website, which pages you visited and which links you clicked on. All of the data is anonymized and cannot be used to identify you',
-                  toggle: {
-                    value: 'targeting',
-                    enabled: false,
-                    readonly: false
-                  }
                 }, {
                   title: 'More information',
-                  description: 'For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="#yourcontactpage">contact us</a>.',
+                  description: 'For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="/#contact">contact us</a>.',
                 }
               ]
             }

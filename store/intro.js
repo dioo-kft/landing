@@ -13,7 +13,10 @@ export const state = () => ({
     ]
   },
   video: {
-    link: "https://www.youtube-nocookie.com/embed/7XFOUAdqHmU",
+    link: {
+      hu: "https://www.youtube-nocookie.com/embed/7XFOUAdqHmU",
+      en: "",
+    },
     placeholder: {
       alt: {
         hu: "DIOO Bemutató videó",
@@ -44,6 +47,9 @@ export const getters = {
   },
   getVideoAlt: (state) => (lang) => {
     return state.video.placeholder.alt[lang];
+  },
+  videoLink: (state) => (lang) => {
+    return state.video.link[lang];
   },
   getVideoCookieWarning: (state) => (lang) => {
     return state.video.placeholder.cookieWarning[lang];

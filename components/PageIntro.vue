@@ -10,7 +10,8 @@
     <b-row>
       <b-col align-self="stretch">
         <b-overlay :show="!isYoutubeEnabled" opacity="1" variant="light" style="color: black">
-          <b-embed v-if="isYoutubeEnabled" type="iframe" aspect="16by9" :src="videoSrc" allowfullscreen></b-embed>
+          <div v-if='videoSrc === ""'>Halo</div>
+          <b-embed v-else-if="isYoutubeEnabled" type="iframe" aspect="16by9" :src="videoSrc" allowfullscreen></b-embed>
           <b-img v-else src="https://via.placeholder.com/900x506?text=." fluid :alt="videoAlt"></b-img>
           <template #overlay>
             <div class="text-center p-3 overlay-content">
@@ -36,9 +37,7 @@
 <script>
 export default {
   data() {
-    return {
-      videoSrc: this.$store.state.intro.video.link,
-    };
+    return {};
   },
   computed: {
     isYoutubeEnabled() {
@@ -52,6 +51,9 @@ export default {
     },
     videoAlt() {
       return this.$store.getters['intro/getVideoAlt'](this.lang);
+    },
+    videoSrc() {
+      return this.$store.getters['intro/videoLink'](this.lang);
     },
     videoCookieWarning() {
       return this.$store.getters['intro/getVideoCookieWarning'](this.lang);

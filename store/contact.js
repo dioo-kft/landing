@@ -49,7 +49,7 @@ export const state = () => ({
   },
   buttonsDescription: {
     hu: "Jelentkezése számunkra fontos, ezért kérjük, érdeklődését jelezze az alábbi gombok valamelyikével!",
-    en: "",
+    en: "To help us better assist you, please use one of the buttons below to tell us the nature of your inquiry!",
   },
 })
 

@@ -15,12 +15,14 @@
             <nuxt-link :to="item.link">{{ item.title }}</nuxt-link>
           </b-nav-item>
         </b-nav-text>
+        <b-nav-text>
         <b-nav-item>
           <b-button class="button-language" @click="toggleLang">
             <img v-if='lang === "en"' class="language-button-img" src="~/assets/img/lang_button_hu.svg" />
             <img v-else class="language-button-img" src="~/assets/img/lang_button_en.svg" />
           </b-button>
         </b-nav-item>
+      </b-nav-text>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -62,7 +64,7 @@ export default {
 
 .language-button-img {
   max-width: 100px;
-  width: 100px;
+  width: 75px;
   border-radius: 4px;
 }
 </style>

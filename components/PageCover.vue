@@ -12,11 +12,11 @@
             </b-col>
           </b-row>
           <b-row align-h="center" class="page-cover-subtitle">
-            <b-col cols="auto">Digitális OkosJáték Óvodásoknak</b-col>
+            <b-col cols="auto">{{ brandSubtitle }}</b-col>
           </b-row>
           <b-row align-h="center">
             <b-col cols="auto">
-              <b-button pill class="button-outline-brand-color" href="#contact">Üzenjen nekünk</b-button>
+              <b-button pill class="button-outline-brand-color" href="#contact">{{ contactUs }}</b-button>
             </b-col>
           </b-row>
         </b-col>
@@ -38,3 +38,23 @@
     </b-col>
   </b-row>
 </template>
+
+
+<script>
+export default {
+  data() {
+    return {};
+  },
+  computed: {
+    lang() {
+      return this.$store.state.cookies.language;
+    },
+    brandSubtitle() {
+      return this.$store.getters['cover/brandSubtitle'](this.lang);
+    },
+    contactUs() {
+      return this.$store.getters['buttons/contactUs'](this.lang);
+    },
+  },
+}
+</script>

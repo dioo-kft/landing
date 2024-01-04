@@ -82,8 +82,8 @@
         <b-row class="justify-content-center">
           <b-col class="text-md-left pb-3 px-4 intro-text" cols="12" style="font-size: 1rem;">
             <b-button pill class="button-light-inverted w-100" style="font-weight: 500;"
-              href="https://forms.clickup.com/f/4bd9e-3121/C0VWX3U1BMFPYUQKSF">
-            {{ callBack }}
+              :href="callBack.link">
+            {{ callBack.text }}
             </b-button>
           </b-col>
         </b-row>

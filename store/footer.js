@@ -8,19 +8,28 @@ export const state = () => ({
       {
         id: 0,
         title: "Pedagógusi Felület",
-        link: "https://system.dioo.hu/ovonok#login_form",
+        link: {
+          href: "https://system.dioo.hu/ovonok#login_form",
+          to: "",
+        },
         show: true,
       },
       {
         id: 1,
         title: "Cookie Tájékoztató",
-        link: "/cookie-tajekoztato",
+        link: {
+          href: "",
+          to: "/cookie-tajekoztato",
+        }, 
         show: true,
       },
       {
         id: 2,
         title: "GDPR Adatvédelmi Szabályzat",
-        link: "/adatvedelmi-szabalyzat",
+        link: {
+          href: "",
+          to: "/adatvedelmi-szabalyzat",
+        },
         show: true,
       },
     ],
@@ -28,19 +37,28 @@ export const state = () => ({
       {
         id: 0,
         title: "For Kindergartens",
-        link: "",
+        link: {
+          href: "",
+          to: "",
+        },
         show: true,
       },
       {
         id: 1,
         title: "Cookie Policy",
-        link: "/cookie-tajekoztato",
+        link: {
+          href: "",
+          to: "/cookie-tajekoztato",
+        },
         show: true,
       },
       {
         id: 2,
         title: "Privacy Policy",
-        link: "/adatvedelmi-szabalyzat",
+        link: {
+          href: "",
+          to: "/adatvedelmi-szabalyzat",
+        },
         show: true,
       },],
   },
@@ -60,8 +78,8 @@ export const mutations = {
     var langs = ["hu", "en"];
     for (var l of langs) {
       for (var e of state.links[l]) {
-        if (e.link !== "") e.show = true;
-        else e.show = false;
+        if (e.link.to === "" && e.link.href === "") e.show = false;
+        else e.show = true;
       }
     }
   },

@@ -25,8 +25,8 @@
         </b-row>
         <b-row align-h="center">
             <b-col cols="auto" class="mt-4">
-              <b-button pill class="button-light-inverted" href="https://forms.clickup.com/f/4bd9e-2981/GXK29I7X40UVA9P2H3">
-                {{ callBack }}
+              <b-button pill class="button-light-inverted" :href="callBack.link">
+                {{ callBack.text }}
               </b-button>
             </b-col>
         </b-row>

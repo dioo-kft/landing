@@ -4,8 +4,18 @@ export const state = () => ({
     en: "Contact Us",
   },
   callBack: {
-    hu: "Visszahívást kérek",
-    en: "Request a Call Back",
+    hu: {
+      text: "Visszahívást kérek",
+      link: "https://forms.clickup.com/f/4bd9e-3121/C0VWX3U1BMFPYUQKSF",
+    },
+    en: {
+      text: "Request a Call Back",
+      link: "https://forms.clickup.com/4568366/f/4bd9e-4032/L7RMH6F40QBLPAO0Y3",
+    }
+  },
+  cookieSettings: {
+    hu: "Cookie(süti) beállítások módosítása",
+    en: "Change Cookie Settings",
   },
   buttons: {
     hu: [{
@@ -30,25 +40,25 @@ export const state = () => ({
       show: true,
     },
     ],
-    en: [ {
+    en: [{
       id: 0,
       text: "Request more info",
-      link: "TODO",
+      link: "https://forms.clickup.com/4568366/f/4bd9e-4032/L7RMH6F40QBLPAO0Y3",
       show: true,
-    },{
+    }, {
       id: 1,
       text: "Order DIOO",
-      link: "TODO",
+      link: "https://forms.clickup.com/4568366/f/4bd9e-4112/RO9RSR9XYLDO5NG7MP",
       show: true,
-    },  {
+    }, {
       id: 2,
       text: "Parental Inquiery",
       link: "",
       show: false,
-    },{
+    }, {
       id: 3,
       text: "Support an Institution",
-      link: "TODO",
+      link: "https://forms.clickup.com/4568366/f/4bd9e-4072/TL7JYF97LV8GZ3PIT7",
       show: true,
     },
     ],
@@ -61,6 +71,9 @@ export const getters = {
   },
   callBack: (state) => (lang) => {
     return state.callBack[lang];
+  },
+  cookieSettings: (state) => (lang) => {
+    return state.cookieSettings[lang];
   },
   buttons: (state) => (lang) => {
     return state.buttons[lang].filter(e => e.show === true);
