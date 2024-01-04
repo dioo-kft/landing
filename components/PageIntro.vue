@@ -10,7 +10,9 @@
     <b-row>
       <b-col align-self="stretch">
         <b-overlay :show="!isYoutubeEnabled" opacity="1" variant="light" style="color: black">
-          <div v-if='videoSrc === ""'>Halo</div>
+          <div class="px-4" v-if='videoSrc === ""' id="detailedDescription">
+            <p v-for="paragraph in detailedDescription">{{ paragraph }}</p>
+          </div>
           <b-embed v-else-if="isYoutubeEnabled" type="iframe" aspect="16by9" :src="videoSrc" allowfullscreen></b-embed>
           <b-img v-else src="https://via.placeholder.com/900x506?text=." fluid :alt="videoAlt"></b-img>
           <template #overlay>
@@ -64,6 +66,9 @@ export default {
     videoEnableCookiesButton() {
       return this.$store.getters['intro/getVideoEnableCookiesButton'](this.lang);
     },
+    detailedDescription() {
+      return this.$store.getters['intro/detailedDescription'](this.lang);
+    },
   },
   methods: {
     enableYoutubeCookies() {
@@ -74,3 +79,9 @@ export default {
   },
 };
 </script>
+
+<style>
+#detailedDescription {
+  color: var(--light-bg-color);
+}
+</style>
