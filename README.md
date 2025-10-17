@@ -1,5 +1,15 @@
 # dioo-landing-page
 
+# Fejlesztés
+Terminalban:
+    export NODE_OPTIONS=--openssl-legacy-provider
+Utána:
+    npm run dev
+    vagy
+    npm run build
+    npm run generate
+
+
 ## Build Setup
 
 ```bash
