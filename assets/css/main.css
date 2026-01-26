@@ -461,3 +461,8 @@ p {
     width: 1em;
     margin-left: -1em;
 }
+
+.col iframe {
+    width: 100%;
+    margin-bottom: 40px;
+}

@@ -17,6 +17,11 @@ export const state = () => ({
         link: "/2020-1-1-1-KKV-START-2021-00400",
         show: true,
       }, {
+        id: "rendezvenyek",
+        title: "Rendezvények",
+        link: "/rendezvenyek#rendezveny2026",
+        show: true,
+      }, {
         id: "contact",
         title: "Kapcsolat",
         link: "/#contact",
