@@ -3,7 +3,7 @@
     <page-section title="Rendezvények" id="nkfi-section">
 
     </page-section>
-    <page-section section-id="rendezveny2026" title="2026" id="nkfi-section">
+    <page-section section-id="rendezveny2026" title="2026" id="rendezveny2026">
       <b-col>
         <b-row>
           <b-col>
@@ -34,7 +34,7 @@
         </b-row>
       </b-col>
     </page-section>
-    <page-section section-id="rendezveny2025" title="2025" id="nkfi-section">
+    <page-section section-id="rendezveny2025" title="2025" id="rendezveny2025">
       <b-col>
         <b-row>
           <b-col>
@@ -70,26 +70,25 @@
                 </li>
               </ul> 
               A program során lehetőség nyílik interaktív bemutatók megtekintésére, a DIOO eszköz gyakorlati kipróbálására, 
-              valamint szakmai kiadványok megismerésére is.<br />
-              A rendezvény <strong>ingyenes</strong> , azonban a részvétel <strong>regisztrációhoz kötött</strong>. 
-              Regisztrálni az alábbi űrlap kitöltésével lehet:
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdMo5mib3qhYYsUruUwk8yZr0R0qY5tKP9IbfPzs2BuHY_wwg/viewform" >
-                Jelentkezési árlap kitöltése
-              </a>
+              valamint szakmai kiadványok megismerésére is.<br /><br />
             </p>
             <b-row>
               <b-col>
+                Mudriné Resku Szilvia előadása
                 <iframe src="https://www.youtube.com/embed/MQvsN3dEjAc?si=F7GY-xvJgpw22IBi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </b-col>
               <b-col>
+                Konkolyi Sándor előadása
                 <iframe src="https://www.youtube.com/embed/8hmrvQewNa8?si=GDSYNrZuAQillUu7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </b-col>
             </b-row>
             <b-row>
               <b-col>
+                Hornyán Anna előadása
                 <iframe src="https://www.youtube.com/embed/GPFQeX7b7L4?si=37GJDSBrqbwo0cD1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </b-col>
               <b-col>
+                Dr. Constantinovics Milán András előadása
                 <iframe src="https://www.youtube.com/embed/yIgHKb4rEEQ?si=8MEdV3r6VAc0HEaP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                
               </b-col>
             </b-row>
