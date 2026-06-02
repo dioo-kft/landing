@@ -7,7 +7,7 @@
     "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt",
     "build": "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider nuxt build",
     "start": "cross-env NODE_ENV=production nuxt start -p 3000 -H 0.0.0.0",
-    "generate": "nuxt generate"
+    "generate": "cross-env NODE_OPTIONS=--openssl-legacy-provider nuxt generate"
   },
   "dependencies": {
     "bootstrap": "^4.6.1",
