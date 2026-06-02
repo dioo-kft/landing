@@ -17,20 +17,20 @@ export const state = () => ({
     hu: [{
       area: "Fenntartóknak, Pedagógusoknak",
       name: "Konkolyi Sándor",
-      phone: "+36 30 526 0457",
+      phone: "+36 70 778 1053",
     }, {
       area: "Társadalmi Felelősségvállalás, Vállalatoknak",
       name: "Beregszászi-Konkolyi Szilvia",
-      phone: "+36 30 526 0457",
+      phone: "+36 70 778 1053",
     },],
     en: [{
       area: "Maintainers, Kindergartens, Teachers",
       name: "Sándor, Konkolyi",
-      phone: "+36 30 526 0457",
+      phone: "+36 70 778 1053",
     }, {
       area: "Corporate social responsibility (CSR)",
       name: "Szilvia, Beregszászi-Konkolyi",
-      phone: "+36 30 526 0457",
+      phone: "+36 70 778 1053",
     },],
   },
   labels: {
