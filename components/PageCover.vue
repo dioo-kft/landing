@@ -28,11 +28,8 @@
           </b-link>
         </b-col>
         <b-col cols="auto" md="4" class="page-cover-stamp-box mt-3">
-          <b-link target="_blank" rel="noopener noreferrer"
-            href="https://www.innovacio.hu/nagydij_pdf/kiadvany_2019.pdf#page=84">
-            <b-img class="page-cover-stamp" src="~assets/img/innovacios-nagydij_stamp.png" fluid alt="Responsive image">
-            </b-img>
-          </b-link>
+          <b-img class="page-cover-stamp" src="~assets/img/innovacios-nagydij_stamp.png" fluid alt="Responsive image">
+          </b-img>
         </b-col>
       </b-row>
     </b-col>
